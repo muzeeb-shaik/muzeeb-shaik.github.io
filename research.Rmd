@@ -1,0 +1,12 @@
+---
+output: html_document
+---
+
+&nbsp;
+
+## <u>Work in Progress </u>
+
+  - “Price Sensitivity and Customer Perceived Switching Costs in Business-to-Business Markets: Joint
+Effect on Customer Repurchase Intentions,”with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
+  - “The Asymmetric Association of Customer Commitment and Behavioral Intentions in
+Business-to-Business Markets,” with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
