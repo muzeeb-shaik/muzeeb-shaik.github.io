@@ -20,5 +20,5 @@ navbar:
       href: https://www.linkedin.com/in/muzeebshaik/
 output:
   html_document:
-    theme: flatly
+    theme: darkly
     css: 'styles.css'
