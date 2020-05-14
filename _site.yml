@@ -1,0 +1,22 @@
+name: "Muzeeb Shaik"
+output_dir: "."
+navbar:
+  title: "Muzeeb Shaik"
+  left:
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: https://github.com/muzeeb1408
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/muzeebshaik
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/muzeebshaik/
+output:
+  html_document:
+    theme: flatly
+    css: 'styles.css'
