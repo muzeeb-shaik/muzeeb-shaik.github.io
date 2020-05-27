@@ -1,25 +1,25 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1590560269423.000,
+    "created" : 1590600416180.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
-    "id" : "249AFBC",
+    "hash" : "712635007",
+    "id" : "E7345190",
     "lastKnownWriteTime" : 1589768850,
     "last_content_update" : 1589768850,
-    "path" : "D:/Google Drive/Personal/Github Website/muzeeb-shaik.github.io/research.Rmd",
-    "project_path" : "research.Rmd",
+    "path" : "D:/Google Drive/Personal/Github Website/muzeeb-shaik.github.io/_site.yml",
+    "project_path" : "_site.yml",
     "properties" : {
-        "cursorPosition" : "5,21",
+        "cursorPosition" : "23,21",
         "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 2,
+    "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "r_markdown"
+    "type" : "yaml"
 }
