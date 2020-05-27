@@ -20,5 +20,6 @@ navbar:
       href: https://www.linkedin.com/in/muzeebshaik/
 output:
   html_document:
-    theme: flatly
+    theme: paper
     css: 'styles.css'
+    highlight: textmate

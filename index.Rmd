@@ -1,9 +1,11 @@
 ---
-title: About Me
+title: " "
+pagetitle: "Muzeeb Shaik"
 ---
 
-<img src="images/muzeeb.jpg" style="max-width:30%;min-width:60px;float:right;" />
+<link rel="stylesheet" href="styles.css" type="text/css">
 
+<img src="images/muzeeb.jpg" style="width:25%; border:3px solid; margin-right: 20px" align="left">
 
 Hi. 
 
