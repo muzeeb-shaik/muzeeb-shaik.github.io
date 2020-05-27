@@ -5,7 +5,7 @@ pagetitle: "Muzeeb Shaik"
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="images/muzeeb.jpg" style="width:25%; ; margin-right: 20px" align="left">
+<img src="images/muzeeb.jpg" style="width:25%; ; margin-right: 20px ; margin-up20px" align="left">
 
 Hi. 
 

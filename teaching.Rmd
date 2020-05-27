@@ -1,8 +1,9 @@
 ---
-title: Teaching
+title: " "
+pagetitle: "Teaching"
 ---
-
 &nbsp;
+
 
 ## <u>Texas A&M University</u>
 - Instructor: Marketing Analytics (Undergraduate) 
