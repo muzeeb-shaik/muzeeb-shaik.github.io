@@ -21,6 +21,6 @@ navbar:
       
 output:
   html_document:
-    theme: sandstone
+    theme: spacelab
     css: 'styles.css'
     highlight: textmate
