@@ -5,7 +5,7 @@ Built following: https://rmarkdown.rstudio.com/lesson-13.html
 
 List of Themes: https://bootswatch.com/
 
-Useful Resource: https://holtzy.github.io/Pimp-my-rmd/#internal_link
+Useful Resource: https://holtzy.github.io/Pimp-my-rmd/
 
 Pick a theme and change the theme name in "_site.yml" file
 
