@@ -21,6 +21,6 @@ navbar:
       
 output:
   html_document:
-    theme: spacelab
+    theme: simplex
     css: 'styles.css'
     highlight: textmate
