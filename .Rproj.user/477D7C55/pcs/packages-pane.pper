@@ -1,7 +1,7 @@
 {
     "installOptions": {
-        "installDependencies": true,
         "installFromRepository": true,
-        "libraryPath": "D:/Users/muzee/Documents/R/win-library/3.6"
+        "libraryPath": "D:/Users/muzee/Documents/R/win-library/4.0",
+        "installDependencies": true
     }
 }
