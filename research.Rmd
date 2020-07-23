@@ -9,10 +9,6 @@ output:
 ***
 
 ### <u>Working Papers </u>
-  - "Novel Application of Predictive Modeling: Identifying Patients for a Tailored Approach to Promoting HCC Surveillance in Patients with Cirrhosis."
-    - Joint work with Amit G. Singal, Yixing Chen, Shrihari Sridhar, Vikas Mittal, Hannah Fullington, Akbar K. Waljee & Jasmin Tiro
-&nbsp;
-    
   - “Price Sensitivity and Customer Perceived Switching Costs in Business-to-Business Markets: Joint
 Effect on Customer Repurchase Intentions.”
     - Joint work with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
@@ -23,3 +19,6 @@ Effect on Customer Repurchase Intentions.”
 Business-to-Business Markets.” 
     - Joint work with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
     - [SSRN](https://papers.ssrn.com/abstract=3532546){target="_blank"}
+&nbsp;
+  - "Novel Application of Predictive Modeling: Identifying Patients for a Tailored Approach to Promoting HCC Surveillance in Patients with Cirrhosis."
+    - Joint work with Amit G. Singal, Yixing Chen, Shrihari Sridhar, Vikas Mittal, Hannah Fullington, Akbar K. Waljee & Jasmin Tiro
