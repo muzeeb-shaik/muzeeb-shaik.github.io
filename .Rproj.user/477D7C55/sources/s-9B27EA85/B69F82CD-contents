@@ -6,6 +6,11 @@ output:
     includes:
       after_body: footer.html
 ---
+<style>
+body {
+  font-size: 16px;
+}
+</style>
 ***
 
 ### <u>Working Papers </u>
