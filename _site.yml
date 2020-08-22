@@ -8,7 +8,7 @@ navbar:
     - text: "Teaching"
       href: teaching.html
     - text: "CV"
-      href: files/Muzeeb_Shaik_CV_July_2020.pdf
+      href: files/Muzeeb_Shaik_CV_Aug_2020.pdf
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
