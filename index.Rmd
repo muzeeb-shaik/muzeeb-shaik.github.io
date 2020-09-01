@@ -9,12 +9,12 @@ output:
 ---
 <style>
 body {
-  font-size: 16px;
+  font-size: 20px;
 }
 </style>
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="images/muzeeb.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
+<img src="images/muzeeb.jpg" style="width:25%; height = 20%; border:5px white; margin-right: 20px" align="left">
 
 I am a third year PhD student in the Marketing Department at the [Mays Business School](https://mays.tamu.edu/){target="_blank"} at Texas A&M University. 
 
