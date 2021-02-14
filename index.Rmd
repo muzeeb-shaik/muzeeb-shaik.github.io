@@ -2,7 +2,7 @@
 title: "Muzeeb Shaik"
 site: distill::distill_website
 ---
-```{r,out.width= "35%",fig.align="center"}
+```{r,out.width= "25%",fig.align="center"}
 knitr::include_graphics("images/muzeeb.jpg")
 ```
 
