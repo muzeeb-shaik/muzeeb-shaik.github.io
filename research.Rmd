@@ -1,32 +1,18 @@
 ---
 title: "Research"
-pagetitle: "Research"
-output: 
-  html_document:
-    includes:
-      after_body: footer.html
+
 ---
-<style>
-body {
-  font-size: 16px;
-}
-</style>
-***
 
-### <u>Working Papers </u>
-  - "Novel Application of Predictive Modeling: Identifying Patients for a Tailored Approach to Promoting HCC Surveillance in Patients with Cirrhosis."
-    - Joint work with Amit G. Singal, Yixing Chen, Shrihari Sridhar, Vikas Mittal, Hannah Fullington, Akbar K. Waljee & Jasmin Tiro
-    -  Revise and resubmit at *Clinical Gastroenterology and Hepatology*.
-  &nbsp;  
-  - “Price Sensitivity and Customer Perceived Switching Costs in Business-to-Business Markets: Joint
-Effect on Customer Repurchase Intentions.”
+### Journal Publications
+
+- Singal, Amit G., Yixing Chen, Shrihari Sridhar, Vikas Mittal, Hannah Fullington, **Muzeeb Shaik**, Akbar K. Waljee and Jasmin Tiro (2021), “Novel Application of Predictive Modeling: Identifying Patients for a Tailored Approach to Promoting HCC Surveillance in Patients with Cirrhosis,” provisionally accepted at *Clinical Gastroenterology and Hepatology*.
+
+### Working Papers
+- “Price Sensitivity and Customer Perceived Switching Costs in Business-to-Business Markets: Joint
+Effect on Customer Repurchase Intentions.”[SSRN](https://papers.ssrn.com/abstract=3530532){target="_blank"}
     - Joint work with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
-    - [SSRN](https://papers.ssrn.com/abstract=3530532){target="_blank"}
-&nbsp;
 
-  - “The Asymmetric Association of Customer Commitment and Behavioral Intentions in
-Business-to-Business Markets.” 
+- “The Asymmetric Association of Customer Commitment and Behavioral Intentions in
+Business-to-Business Markets.” [SSRN](https://papers.ssrn.com/abstract=3532546){target="_blank"}
     - Joint work with Narendra Bosukonda, Vikas Mittal & Shrihari Sridhar.
-    - [SSRN](https://papers.ssrn.com/abstract=3532546){target="_blank"}
-
 

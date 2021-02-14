@@ -1,30 +1,13 @@
 ---
-title: " "
-pagetitle: "Muzeeb Shaik"
-output: 
-  html_document:
-    css: styles.css
-    includes:
-      after_body: footer.html
+title: "Muzeeb Shaik"
+site: distill::distill_website
 ---
-<style>
-body {
-  font-size: 20px;
-}
-</style>
-<link rel="stylesheet" href="styles.css" type="text/css">
-
-<img src="images/muzeeb.jpg" style="width:25%; height = 20%; border:5px white; margin-right: 20px" align="left">
+```{r,out.width= "30%",fig.align="center"}
+knitr::include_graphics("images/muzeeb.jpg")
+```
 
 I am a third year PhD student in the Marketing Department at the [Mays Business School](https://mays.tamu.edu/){target="_blank"} at Texas A&M University. 
 
-
 My current research focuses on Interfirm Relationships (B2B) and Sales Force Effectiveness. I am co-advised by [Hari Sridhar](https://mays.tamu.edu/directory/shriharisridhar/){target="_blank"} (Texas A&M University) and [Vikas Mittal](https://business.rice.edu/person/vikas-mittal){target="_blank"} (Rice University). 
-
-
-My full CV is available [here](files/Muzeeb_Shaik_CV_July_2020.pdf){target="_blank"}.
-
-<br><br><br><br>
-<br><br><br><br>
 
 
