@@ -12,10 +12,10 @@ navbar:
     - text: "Teaching"
       href: teaching.html
     - text: "CV"
-      href: files/Muzeeb_Shaik_CV_Aug_2020.pdf
+      href: files/Muzeeb_Shaik_CV_Feb_2021.pdf
   right:
     - icon: fa-envelope fa-lg
-      href: "mailto:rs2452@cornell.edu"
+      href: "mailto:mshaik#@mays.tamu.edu"
     - icon: fa-github fa-lg
       href: https://github.com/muzeeb-shaik
     - icon: fa-twitter fa-lg

@@ -1,25 +1,27 @@
 name: "Muzeeb Shaik"
+title: "Muzeeb Shaik"
+favicon: images/favicon.png
+base_url: 
+description: |
+  Muzeeb Shaik
 output_dir: "."
 navbar:
-  title: "Muzeeb Shaik"
   left:
     - text: "Research"
       href: research.html
     - text: "Teaching"
       href: teaching.html
     - text: "CV"
-      href: files/Muzeeb_Shaik_CV_Aug_2020.pdf
+      href: files/Muzeeb_Shaik_CV_Feb_2021.pdf
   right:
     - icon: fa-envelope fa-lg
-      href: contact.html
+      href: "mailto:mshaik#@mays.tamu.edu"
     - icon: fa-github fa-lg
       href: https://github.com/muzeeb-shaik
     - icon: fa-twitter fa-lg
       href: https://twitter.com/muzeebshaik
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/muzeebshaik/
-      
-output:
-  html_document:
-    theme: paper
-    css: 'styles.css'
+
+output: distill::distill_article
+theme: muzeeb.css
