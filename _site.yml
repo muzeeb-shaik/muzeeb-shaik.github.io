@@ -12,7 +12,7 @@ navbar:
     - text: "Teaching"
       href: teaching.html
     - text: "CV"
-      href: CV.html
+      href: files/Muzeeb_Shaik_CV_Feb_2021.pdf
 
     - icon: fa-envelope fa-lg
       href: "mailto:mshaik#@mays.tamu.edu"
