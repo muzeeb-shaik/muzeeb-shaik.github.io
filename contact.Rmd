@@ -1,0 +1,17 @@
+---
+title: Contact Me
+output: 
+  html_document:
+    includes:
+      after_body: footer.html
+---
+<style>
+body {
+  font-size: 16px;
+}
+</style>
+***
+
+I’d love to hear from you, so feel free to reach out at mshaik@mays.tamu.edu.
+
+Or connect with me on GitHub, Twitter, or Linkedin (links in top right).

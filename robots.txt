@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://academic-demo.netlify.app/sitemap.xml
