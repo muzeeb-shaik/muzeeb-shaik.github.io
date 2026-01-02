@@ -46,6 +46,10 @@
             scroll-behavior: smooth;
         }
 
+        section {
+            scroll-margin-top: 80px;
+        }
+
         body {
             font-family: 'DM Sans', sans-serif;
             background: var(--paper);
@@ -128,7 +132,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 8rem 2rem 4rem;
+            padding: 7rem 2rem 4rem;
             max-width: 1100px;
             margin: 0 auto;
         }
@@ -247,14 +251,14 @@
         section {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 6rem 2rem;
+            padding: 3rem 2rem;
         }
 
         .section-header {
             display: flex;
             align-items: baseline;
             gap: 1.5rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         .section-header h2 {
@@ -276,7 +280,7 @@
         .interests-section {
             background: var(--cream);
             max-width: 100%;
-            padding: 5rem 2rem;
+            padding: 3rem 2rem;
         }
 
         .interests-container {
@@ -686,7 +690,7 @@
             <a href="#" class="nav-logo">Muzeeb Shaik</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
+                <li><a href="#interests">Research</a></li>
                 <li><a href="#background">Background</a></li>
                 <li><a href="Muzeeb-Shaik-CV.pdf" target="_blank">CV</a></li>
             </ul>
@@ -721,7 +725,7 @@
         </div>
     </section>
 
-    <section class="interests-section">
+    <section class="interests-section" id="interests">
         <div class="interests-container">
             <div class="section-header">
                 <h2>Research Interests</h2>
