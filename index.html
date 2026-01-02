@@ -614,6 +614,19 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 900px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .nav-logo {
+                text-align: center;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
             .hero-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -624,8 +637,20 @@
                 margin: 0 auto;
             }
 
+            .hero-text {
+                text-align: center;
+            }
+
             .hero-text h1 {
                 font-size: 3rem;
+            }
+
+            .hero-text .bio {
+                text-align: left;
+            }
+
+            .contact-line {
+                justify-content: center;
             }
 
             .interests-grid {
