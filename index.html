@@ -135,14 +135,15 @@
 
         .hero-content {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 5rem;
-            align-items: center;
+            grid-template-columns: 180px 1fr;
+            gap: 3rem;
+            align-items: start;
             width: 100%;
         }
 
         .hero-image-container {
             position: relative;
+            width: 180px;
         }
 
         .hero-image-container::before {
@@ -160,6 +161,7 @@
             width: 100%;
             aspect-ratio: 1/1;
             object-fit: cover;
+            object-position: top;
             filter: grayscale(20%);
             transition: filter 0.5s ease;
         }
@@ -174,7 +176,7 @@
             font-weight: 400;
             letter-spacing: -0.03em;
             line-height: 1.1;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
             animation: fadeUp 0.8s ease forwards;
             opacity: 0;
             color: var(--accent);
@@ -183,7 +185,7 @@
         .hero-text .subtitle {
             font-size: 1.1rem;
             color: var(--muted);
-            margin-bottom: 2rem;
+            margin-bottom: 0.25rem;
             animation: fadeUp 0.8s ease 0.1s forwards;
             opacity: 0;
         }
@@ -193,7 +195,7 @@
             font-size: 1.3rem;
             font-style: italic;
             color: var(--accent);
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             animation: fadeUp 0.8s ease 0.2s forwards;
             opacity: 0;
         }
@@ -201,7 +203,6 @@
         .hero-text .bio {
             font-size: 1.05rem;
             color: var(--ink);
-            max-width: 520px;
             animation: fadeUp 0.8s ease 0.3s forwards;
             opacity: 0;
         }
@@ -438,21 +439,44 @@
             border-left: 2px solid var(--accent);
         }
 
-        .abstract-toggle {
+        /* CSS-only abstract toggle */
+        .abstract-checkbox {
+            display: none;
+        }
+
+        .abstract-label {
             margin-top: 0.75rem;
             font-size: 0.85rem;
             color: var(--accent);
             cursor: pointer;
-            background: none;
-            border: none;
-            font-family: inherit;
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
+            display: inline-block;
         }
 
-        .abstract-toggle:hover {
+        .abstract-label:hover {
             text-decoration: underline;
+        }
+
+        .abstract-content {
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: var(--highlight);
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.8;
+            border-left: 2px solid var(--accent);
+            display: none;
+        }
+
+        .abstract-checkbox:checked ~ .abstract-content {
+            display: block;
+        }
+
+        .abstract-label::after {
+            content: ' ↓';
+        }
+
+        .abstract-checkbox:checked ~ .abstract-label::after {
+            content: ' ↑';
         }
 
         /* Other Publications */
@@ -592,11 +616,11 @@
         @media (max-width: 900px) {
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2rem;
             }
 
             .hero-image-container {
-                max-width: 300px;
+                width: 150px;
                 margin: 0 auto;
             }
 
@@ -758,8 +782,9 @@
             <span class="wp-status">Reject & Resubmit at JCR</span>
             <h3 class="pub-title">Designing New Studies Using Meta-Analysis for Estimate Precision: The Case of Customer Satisfaction and Customer Retention</h3>
             <p class="pub-authors">with Kyuhong Han, Vikas Mittal, and Shrihari Sridhar</p>
-            <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract ↓</button>
-            <div class="abstract" style="display: none;">
+            <input type="checkbox" id="abstract-toggle" class="abstract-checkbox">
+            <label for="abstract-toggle" class="abstract-label">Show Abstract</label>
+            <div class="abstract-content">
                 Scholars often use a descriptive meta-analysis to quantitatively synthesize extant empirical research on the relationship between a focal construct and an outcome. A meta-analysis can provide more generalizable conclusions than those obtained from a single study. Yet, a typical descriptive meta-analysis only provides a snapshot of extant research at the time the meta-analysis is conducted. Further, a descriptive meta-analysis does not provide guidance on how new studies may improve the estimate precision of the focal relationship (i.e., decrease its variance and confidence interval) and, thus, further our understanding of the focal relationship. Against this background, the current study proposes an approach that assesses the estimate precision of the focal relationship from a meta-analysis. By illustrating the approach using the customer satisfaction–retention relationship, the authors address three questions: (1) how well have extant empirical studies collectively improved the estimate precision of the association between CS and retention, (2) how has the estimate precision evolved over time, and (3) what should be the best-next study to improve the estimate precision of the CS–retention relationship?
             </div>
         </div>
@@ -835,16 +860,6 @@
     </footer>
 
     <script>
-        function toggleAbstract(btn) {
-            const abstract = btn.nextElementSibling;
-            if (abstract.style.display === 'none') {
-                abstract.style.display = 'block';
-                btn.textContent = 'Hide Abstract ↑';
-            } else {
-                abstract.style.display = 'none';
-                btn.textContent = 'Show Abstract ↓';
-            }
-        }
 
         // Smooth scroll for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
