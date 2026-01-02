@@ -135,15 +135,21 @@
 
         .hero-content {
             display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 3rem;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
             align-items: start;
             width: 100%;
         }
 
+        .hero-left {
+            text-align: center;
+        }
+
         .hero-image-container {
             position: relative;
-            width: 180px;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 1.5rem;
         }
 
         .hero-image-container::before {
@@ -170,41 +176,33 @@
             filter: grayscale(0%);
         }
 
-        .hero-text h1 {
+        .hero-left h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 4rem;
-            font-weight: 400;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 0.25rem;
-            animation: fadeUp 0.8s ease forwards;
-            opacity: 0;
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.3rem;
             color: var(--accent);
         }
 
-        .hero-text .subtitle {
-            font-size: 1.1rem;
+        .hero-left .subtitle {
+            font-size: 1rem;
             color: var(--muted);
-            margin-bottom: 0.25rem;
-            animation: fadeUp 0.8s ease 0.1s forwards;
-            opacity: 0;
+            margin-bottom: 0.2rem;
         }
 
-        .hero-text .affiliation {
+        .hero-left .affiliation {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-style: italic;
             color: var(--accent);
-            margin-bottom: 2rem;
-            animation: fadeUp 0.8s ease 0.2s forwards;
-            opacity: 0;
         }
 
         .hero-text .bio {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             color: var(--ink);
-            animation: fadeUp 0.8s ease 0.3s forwards;
-            opacity: 0;
+            line-height: 1.8;
         }
 
         .hero-text .bio em {
@@ -212,14 +210,12 @@
             color: var(--muted);
         }
 
-        .contact-line {
-            margin-top: 2.5rem;
-            padding-top: 2rem;
+        .hero-text .contact-line {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
             border-top: 1px solid var(--border);
             display: flex;
             gap: 2rem;
-            animation: fadeUp 0.8s ease 0.4s forwards;
-            opacity: 0;
         }
 
         .contact-line a {
@@ -632,25 +628,22 @@
                 gap: 2rem;
             }
 
-            .hero-image-container {
-                width: 150px;
-                margin: 0 auto;
-            }
-
-            .hero-text {
+            .hero-left {
                 text-align: center;
             }
 
-            .hero-text h1 {
-                font-size: 3rem;
+            .hero-image-container {
+                width: 180px;
+                margin: 0 auto 1rem;
             }
 
-            .hero-text .bio {
+            .hero-text {
                 text-align: left;
             }
 
-            .contact-line {
-                justify-content: center;
+            .hero-text .contact-line {
+                flex-direction: column;
+                gap: 0.75rem;
             }
 
             .interests-grid {
@@ -702,13 +695,15 @@
 
     <section class="hero" id="about">
         <div class="hero-content">
-            <div class="hero-image-container">
-                <img src="profile.jpg" alt="Muzeeb Shaik" class="hero-image">
-            </div>
-            <div class="hero-text">
+            <div class="hero-left">
+                <div class="hero-image-container">
+                    <img src="profile.jpg" alt="Muzeeb Shaik" class="hero-image">
+                </div>
                 <h1>Muzeeb Shaik</h1>
                 <p class="subtitle">Assistant Professor of Marketing</p>
                 <p class="affiliation">Kelley School of Business, Indiana University</p>
+            </div>
+            <div class="hero-text">
                 <p class="bio">
                     I am a quantitative marketing strategy researcher focused on understanding the financial and societal impacts of marketing actions. My expertise includes business-to-business (B2B) sales, healthcare, and education, with a strong methodological background in causal modeling, applied machine learning, and optimization. My research has been published or accepted at <em>Journal of Marketing Research</em>, <em>Production and Operations Management</em>, <em>Clinical Gastroenterology and Hepatology</em>, and <em>Harvard Business Review</em>.
                 </p>
@@ -721,7 +716,6 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         +1-812-855-2506
                     </a>
-
                 </div>
             </div>
         </div>
