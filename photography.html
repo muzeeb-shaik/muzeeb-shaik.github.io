@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography | Muzeeb Shaik</title>
+    <meta name="description" content="Photography by Muzeeb Shaik - A collection of moments captured through my lens.">
+    <link rel="canonical" href="https://muzeeb-shaik.github.io/photography.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #fdfcfa;
+            --accent: #990000;
+            --accent-dark: #7a0000;
+            --muted: #6b6b6b;
+            --border: #e0ddd8;
+            --highlight: #f9f5f2;
+            --cream: #edebeb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: var(--paper);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--ink);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .photo-gallery img:hover {
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--accent);
+            color: var(--paper);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--paper);
+        }
+
+        .footer-bottom {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 900px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .photo-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            opacity: 1;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            user-select: none;
+        }
+
+        .lightbox-nav:hover {
+            opacity: 1;
+        }
+
+        .lightbox-prev {
+            left: 1rem;
+        }
+
+        .lightbox-next {
+            right: 1rem;
+        }
+
+        .lightbox img {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Muzeeb Shaik</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#interests">Research</a></li>
+                <li><a href="index.html#background">Background</a></li>
+                <li><a href="Muzeeb-Shaik-CV.pdf" target="_blank">CV</a></li>
+                <li><a href="photography.html" class="active">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Photography</h1>
+            <p>In my free time, I explore the world through my lens. Here is a glimpse of the world as I see it.</p>
+        </div>
+
+        <div class="photo-gallery" id="gallery">
+            <!-- Photos are loaded automatically from the list below -->
+        </div>
+
+        <script>
+            // ============================================
+            // ADD YOUR PHOTOS HERE - just add the filename
+            // ============================================
+            const photos = [
+                "photo1.jpg",
+                "photo2.jpg",
+                "photo3.jpg",
+                "photo4.jpg",
+                "photo5.jpg",
+                "photo6.jpg",
+                "photo7.jpg",
+                "photo8.jpg",
+                "photo9.jpg",
+                "photo10.jpg",
+                "photo11.jpg",
+                "photo12.jpg",
+                "photo13.jpg",
+                "photo14.jpg",
+                "photo15.jpg",
+                "photo16.jpg",
+                "photo17.jpg",
+                "photo18.jpg",
+                "photo19.jpg",
+                "photo20.jpg",
+                "photo21.jpg",
+                "photo22.jpg",
+                "photo23.jpg",
+                "photo24.jpg",
+                "photo25.jpg",
+                "photo26.jpg",
+                "photo27.jpg",
+                "photo28.jpg",
+                "photo29.jpg",
+                "photo30.jpg",
+                "photo31.jpg",
+                "photo32.jpg",
+                "photo33.jpg",
+                "photo34.jpg",
+                "photo35.jpg",
+            ];
+            // ============================================
+
+            // Shuffle photos randomly
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+            shuffleArray(photos);
+
+            // Auto-generate gallery
+            const gallery = document.getElementById('gallery');
+            photos.forEach((photo, index) => {
+                const img = document.createElement('img');
+                img.src = `photography/${photo}`;
+                img.alt = '';
+                img.onclick = function() { openLightbox(this, index); };
+                gallery.appendChild(img);
+            });
+        </script>
+    </main>
+
+    <!-- Lightbox for full-size images -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="navigatePhoto(event, -1)">&#10094;</span>
+        <img src="" alt="" id="lightbox-img">
+        <span class="lightbox-nav lightbox-next" onclick="navigatePhoto(event, 1)">&#10095;</span>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2025 Muzeeb Shaik
+        </div>
+    </footer>
+
+    <script>
+        let currentPhotoIndex = 0;
+
+        function openLightbox(img, index) {
+            currentPhotoIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox(event) {
+            if (event && (event.target.classList.contains('lightbox-nav') || event.target.tagName === 'IMG')) {
+                return;
+            }
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function navigatePhoto(event, direction) {
+            event.stopPropagation();
+            currentPhotoIndex += direction;
+
+            // Wrap around
+            if (currentPhotoIndex < 0) {
+                currentPhotoIndex = photos.length - 1;
+            } else if (currentPhotoIndex >= photos.length) {
+                currentPhotoIndex = 0;
+            }
+
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = `photography/${photos[currentPhotoIndex]}`;
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('active')) return;
+
+            if (e.key === 'Escape') {
+                document.getElementById('lightbox').classList.remove('active');
+            } else if (e.key === 'ArrowLeft') {
+                navigatePhoto(e, -1);
+            } else if (e.key === 'ArrowRight') {
+                navigatePhoto(e, 1);
+            }
+        });
+    </script>
+</body>
+</html>
