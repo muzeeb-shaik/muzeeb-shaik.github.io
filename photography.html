@@ -129,7 +129,7 @@
         .page-header p {
             color: var(--muted);
             font-size: 1.1rem;
-            max-width: 600px;
+            max-width: 800px;
         }
 
         /* Photo Gallery */
@@ -298,47 +298,8 @@
         </div>
 
         <script>
-            // ============================================
-            // ADD YOUR PHOTOS HERE - just add the filename
-            // ============================================
-            const photos = [
-                "photo1.jpg",
-                "photo2.jpg",
-                "photo3.jpg",
-                "photo4.jpg",
-                "photo5.jpg",
-                "photo6.jpg",
-                "photo7.jpg",
-                "photo8.jpg",
-                "photo9.jpg",
-                "photo10.jpg",
-                "photo11.jpg",
-                "photo12.jpg",
-                "photo13.jpg",
-                "photo14.jpg",
-                "photo15.jpg",
-                "photo16.jpg",
-                "photo17.jpg",
-                "photo18.jpg",
-                "photo19.jpg",
-                "photo20.jpg",
-                "photo21.jpg",
-                "photo22.jpg",
-                "photo23.jpg",
-                "photo24.jpg",
-                "photo25.jpg",
-                "photo26.jpg",
-                "photo27.jpg",
-                "photo28.jpg",
-                "photo29.jpg",
-                "photo30.jpg",
-                "photo31.jpg",
-                "photo32.jpg",
-                "photo33.jpg",
-                "photo34.jpg",
-                "photo35.jpg",
-            ];
-            // ============================================
+            const photos = [];
+            const gallery = document.getElementById('gallery');
 
             // Shuffle photos randomly
             function shuffleArray(array) {
@@ -348,17 +309,46 @@
                 }
                 return array;
             }
-            shuffleArray(photos);
 
-            // Auto-generate gallery
-            const gallery = document.getElementById('gallery');
-            photos.forEach((photo, index) => {
-                const img = document.createElement('img');
-                img.src = `photography/${photo}`;
-                img.alt = '';
-                img.onclick = function() { openLightbox(this, index); };
-                gallery.appendChild(img);
-            });
+            // Check if an image exists
+            function checkImage(url) {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => resolve(true);
+                    img.onerror = () => resolve(false);
+                    img.src = url;
+                });
+            }
+
+            // Load all photos dynamically
+            async function loadPhotos() {
+                let photoNum = 1;
+
+                // Keep checking for photos until we find a gap
+                while (true) {
+                    const filename = `photo${photoNum}.jpg`;
+                    const exists = await checkImage(`photography/${filename}`);
+                    if (exists) {
+                        photos.push(filename);
+                        photoNum++;
+                    } else {
+                        break;
+                    }
+                }
+
+                // Shuffle and display
+                shuffleArray(photos);
+
+                photos.forEach((photo, index) => {
+                    const img = document.createElement('img');
+                    img.src = `photography/${photo}`;
+                    img.alt = '';
+                    img.onclick = function() { openLightbox(this, index); };
+                    gallery.appendChild(img);
+                });
+            }
+
+            loadPhotos();
         </script>
     </main>
 
