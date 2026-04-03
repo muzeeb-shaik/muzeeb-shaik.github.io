@@ -7,6 +7,9 @@
     <meta name="description" content="Photography by Muzeeb Shaik - A collection of moments captured through my lens.">
     <link rel="canonical" href="https://muzeeb-shaik.github.io/photography.html">
 
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23990000'/><text x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'>MS</text></svg>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -175,15 +178,64 @@
             color: rgba(255,255,255,0.5);
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--ink);
+            margin: 5px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
         /* Mobile Responsiveness */
         @media (max-width: 900px) {
+            .hamburger {
+                display: block;
+            }
+
             .nav-container {
-                flex-direction: column;
-                gap: 0.75rem;
+                flex-direction: row;
+                flex-wrap: wrap;
             }
 
             .nav-links {
-                gap: 1.5rem;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 0;
+                padding: 1rem 0 0.5rem;
+                border-top: 1px solid var(--border);
+                margin-top: 0.75rem;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 0.6rem 0;
             }
         }
 
@@ -277,6 +329,9 @@
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Muzeeb Shaik</a>
+            <button class="hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open');">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#interests">Research</a></li>
@@ -343,6 +398,9 @@
                     const img = document.createElement('img');
                     img.src = `photography/${photo}`;
                     img.alt = '';
+                    img.loading = 'lazy';
+                    img.width = 400;
+                    img.height = 280;
                     img.onclick = function() { openLightbox(this, index); };
                     gallery.appendChild(img);
                 });

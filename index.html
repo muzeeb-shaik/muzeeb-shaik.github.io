@@ -15,11 +15,18 @@
     <meta property="og:description" content="Assistant Professor of Marketing at Kelley School of Business, Indiana University.">
     <meta property="og:url" content="https://muzeeb-shaik.github.io/">
     <meta property="og:type" content="website">
-    
+    <meta property="og:image" content="https://muzeeb-shaik.github.io/profile.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Muzeeb Shaik | Marketing Scholar">
     <meta name="twitter:description" content="Assistant Professor of Marketing at Kelley School of Business, Indiana University.">
+    <meta name="twitter:image" content="https://muzeeb-shaik.github.io/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23990000'/><text x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'>MS</text></svg>">
     
     <!-- Structured Data for Working Papers -->
     <script type="application/ld+json">
@@ -631,11 +638,45 @@
             color: rgba(255,255,255,0.5);
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--ink);
+            margin: 5px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
         /* Mobile Responsiveness */
         @media (max-width: 900px) {
+            .hamburger {
+                display: block;
+            }
+
             .nav-container {
-                flex-direction: column;
-                gap: 0.75rem;
+                flex-direction: row;
+                flex-wrap: wrap;
             }
 
             .nav-logo {
@@ -643,7 +684,22 @@
             }
 
             .nav-links {
-                gap: 1.5rem;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 0;
+                padding: 1rem 0 0.5rem;
+                border-top: 1px solid var(--border);
+                margin-top: 0.75rem;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 0.6rem 0;
             }
 
             .hero-content {
@@ -708,6 +764,9 @@
     <nav>
         <div class="nav-container">
             <a href="#" class="nav-logo">Muzeeb Shaik</a>
+            <button class="hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open');">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#interests">Research</a></li>
@@ -933,22 +992,29 @@
             </div>
         </div>
         <div class="footer-bottom">
-            © 2025 Muzeeb Shaik
+            © 2026 Muzeeb Shaik
         </div>
     </footer>
 
     <script>
 
-        // Smooth scroll for nav links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        // Smooth scroll for nav links & close mobile menu on click
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                // Close mobile menu
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('.nav-links').classList.remove('open');
+
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
         });
