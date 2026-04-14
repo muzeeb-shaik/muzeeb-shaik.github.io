@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*-- scss:defaults --*/
+
+/* Texas A&M Colors: Maroon (#500000), White (#FFFFFF) */
+$link-color: #500000;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-monospace: 'Fira Mono', monospace;
+
+$presentation-title-slide-text-align: center;
+/*-- scss:rules --*/
+
+h1 {
+  color: #500000 !important;
+}
+
+
+h2 {
+  color: #500000 !important;
+}
+
+.reveal .slide-logo {
+  height: 65px !important;
+  width: auto !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+/*
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  right: unset !important;
+  top: 5px;
+  right: 12px;
+  height: 100px !important;
+  width: 100x !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+*/
+
+.title {
+  color: #500000 !important;
+  font-size: 70pt !important;
+}
+.reveal section ol {
+  margin-left: 1.2em !important;
+}
+
+.my-crimson {
+  color:#500000;
+  font-weight: bold;
+}
+
+.crimson-glass {
+  background-color: rgba(255, 255, 255, 0.95); /* High opacity to block text behind */
+  border: 2px solid rgba(80, 0, 0, 0.8);
+  color: #3a0008;
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-size: 0.80em;
+  max-width: 450px;
+}
