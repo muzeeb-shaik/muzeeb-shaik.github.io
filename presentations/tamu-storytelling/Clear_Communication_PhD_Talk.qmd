@@ -67,7 +67,7 @@ editor:
 
 ::::
 
----
+
 
 ## Building on Dr. Sreenivasan's Talk
 
@@ -83,7 +83,7 @@ Dr. Sreenivasan gave you the **frameworks**:
 I am going to show you what happens when you **violate** those
 principles -- and what it looks like when you finally get them right.
 
----
+
 
 ## A Confession
 
@@ -101,7 +101,7 @@ principles -- and what it looks like when you finally get them right.
 - If the story wanders, the reader gets lost. And a lost reviewer is a
   reviewer who says "no."
 
----
+
 
 ## The Early-Career Trap
 
@@ -124,7 +124,7 @@ Remember Dr. Sreenivasan's point: cognitive overload is real -- for
 reviewers too.
 :::
 
----
+
 
 ## Have You Watched Vox? {.smaller}
 
@@ -160,7 +160,7 @@ Let me break down their formula.
 
 ::::
 
----
+
 
 ## The Vox Formula: 5 Moves
 
@@ -187,7 +187,7 @@ Let me break down their formula.
 5. [**Meet the audience where they are.**]{.my-crimson} Conversational,
    not academic. Clarity over cleverness.
 
----
+
 
 ## The Vox Formula Applied to Papers
 
@@ -199,7 +199,7 @@ Let me break down their formula.
 | Explain the "why" early | Mechanism in the framework, not hand-waved in the discussion |
 | Meet the audience | Write for a smart reviewer who is not in your exact subfield |
 
----
+
 
 # [A Cautionary Tale]{style="color: #990000;"} {data-background-color="#FFFFFF"}
 
@@ -207,7 +207,7 @@ Let me break down their formula.
 What happens when the story is not clear -- from my own experience
 :::
 
----
+
 
 ## The Paper
 
@@ -237,12 +237,12 @@ consider?
 
 - [**Two reject-and-resubmits**]{.my-crimson} before we found the right journal -- where it got conditionally accepted after one round of revision.
 
----
+
 
 ## The Timeline
 
 | Date | Event | Outcome |
-|------|-------|---------|
+|---|-------|---------|
 | **Sep 2023** | 1st submission to Frontiers in Marketing Science | |
 | **Oct 2023** | Decision | [Reject & Resubmit]{style="color: #990000; font-weight: bold;"} |
 | **Mar 2024** | 2nd submission to Frontiers in Marketing Science | |
@@ -254,11 +254,15 @@ consider?
 > Editor: *"It is very unusual for the same paper to receive a reject
 > and resubmit twice in a row."*
 
----
+
 
 # [Where the Story Went Wrong]{style="color: #990000;"} {data-background-color="#FFFFFF"}
 
----
+::: {style="color: #555; font-size: 1.1em;"}
+Three mistakes that kept the story from working
+:::
+
+
 
 ## Mistake #1: We Tried to Say Too Much
 
@@ -269,7 +273,7 @@ goods (alcohol + cigarettes), and home values
 
 We thought: more outcomes = more comprehensive = more impressive
 
----
+
 
 ## Version 1: The Results Were All Over the Place
 
@@ -286,7 +290,7 @@ We thought: more outcomes = more comprehensive = more impressive
 We also checked two health indices for diet quality -- no significant
 effects. We were reporting a *collection of findings*, not a *story*.
 
----
+
 
 ## Too Many Outcomes: What the Reviewers Thought
 
@@ -302,7 +306,7 @@ effects. We were reporting a *collection of findings*, not a *story*.
 so neither could the reviewers.
 :::
 
----
+
 
 ## Mistake #2: "What" Without "Why"
 
@@ -323,7 +327,7 @@ we showed what we studied but failed to articulate why it matters.
 **A finding without a mechanism is a fact, not a story.**
 :::
 
----
+
 
 ## Round 2: Tighter, But Still No "Why"
 
@@ -339,7 +343,7 @@ story.
 
 But still [**no direct evidence**]{.my-crimson} for *why* the effect happened.
 
----
+
 
 ## Round 2: Same Question Again
 
@@ -355,7 +359,7 @@ But still [**no direct evidence**]{.my-crimson} for *why* the effect happened.
 **Same question, two rounds. The problem was our communication.**
 :::
 
----
+
 
 # [The Turning Point]{style="color: #990000;"} {data-background-color="#FFFFFF"}
 
@@ -363,7 +367,7 @@ But still [**no direct evidence**]{.my-crimson} for *why* the effect happened.
 What changed for JMR
 :::
 
----
+
 
 ## We Found the Story
 
@@ -379,7 +383,7 @@ We asked: [**What is the *one* story this paper tells?**]{.my-crimson}
 4. [**Grounded the ideology story**]{.my-crimson} in motivated social
    cognition
 
----
+
 
 ## Version 3: Every Result Served the Story
 
@@ -399,7 +403,7 @@ We asked: [**What is the *one* story this paper tells?**]{.my-crimson}
 
 Now every finding pointed in the same direction. [**One story.**]{.my-crimson}
 
----
+
 
 ## Before and After
 
@@ -442,7 +446,7 @@ One story. Clear throughline.
 
 ::::
 
----
+
 
 ## The Structure Told the Story
 
@@ -457,7 +461,7 @@ One story. Clear throughline.
 
 Each study = a chapter. [Each chapter advances the plot.]{.my-crimson}
 
----
+
 
 ## The Numbers
 
@@ -474,7 +478,7 @@ Each study = a chapter. [Each chapter advances the plot.]{.my-crimson}
 **Fewer outcomes. Clearer mechanism. Better story. Better result.**
 :::
 
----
+
 
 ## And the Story Continues...
 
@@ -496,11 +500,15 @@ Each study = a chapter. [Each chapter advances the plot.]{.my-crimson}
 [*How I Wrote This* -- Ep. 23]{style="font-size: 0.6em; color: #888;"}
 :::
 
----
+
 
 # [Takeaways]{style="color: #990000;"} {data-background-color="#FFFFFF"}
 
----
+::: {style="color: #555; font-size: 1.1em;"}
+What I wish someone had told me
+:::
+
+
 
 ## Five Things I Wish I Knew
 
@@ -528,7 +536,7 @@ Each study = a chapter. [Each chapter advances the plot.]{.my-crimson}
 5. **Structure is communication.** Every section should advance the
    plot. **Structure beats improvisation.**
 
----
+
 
 ## One Last Thing
 
@@ -545,7 +553,7 @@ When a paper struggles -- and it will -- ask yourself:
 your ideas down by not telling their story well.**
 :::
 
----
+
 
 # {data-menu-title="Thank You" data-background-color="#FFFFFF" style="text-align: center;"}
 
