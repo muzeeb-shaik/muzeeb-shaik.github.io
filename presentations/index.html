@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations | Muzeeb Shaik</title>
+    <meta name="description" content="Talks and presentations by Muzeeb Shaik, Assistant Professor of Marketing at the Kelley School of Business, Indiana University.">
+    <link rel="canonical" href="https://muzeeb-shaik.github.io/presentations/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23990000'/><text x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'>MS</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #fdfcfa;
+            --accent: #990000;
+            --accent-dark: #7a0000;
+            --muted: #6b6b6b;
+            --border: #e0ddd8;
+            --highlight: #f9f5f2;
+            --cream: #edebeb;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        ::selection { background: var(--accent); color: var(--paper); }
+
+        /* Navigation */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000; padding: 1rem 0;
+        }
+        .nav-container {
+            max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem; font-weight: 500;
+            color: var(--accent); text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+        .nav-links {
+            display: flex; gap: 2.5rem; list-style: none;
+        }
+        .nav-links a {
+            color: var(--muted); text-decoration: none;
+            font-size: 0.9rem; letter-spacing: 0.03em;
+            transition: color 0.3s ease; position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0;
+            width: 0; height: 1px; background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+        /* Main */
+        main {
+            max-width: 1100px; margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        .page-header { margin-bottom: 3rem; }
+        .page-header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem; font-weight: 400;
+            color: var(--accent); margin-bottom: 1rem;
+        }
+        .page-header p {
+            color: var(--muted); font-size: 1.1rem; max-width: 800px;
+        }
+
+        /* Presentation cards */
+        .talk-list {
+            display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+        }
+        .talk {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 4px;
+            padding: 1.75rem 2rem;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+        }
+        .talk:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px -12px rgba(153,0,0,0.18);
+            transform: translateY(-2px);
+        }
+        .talk-meta {
+            display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem;
+            font-size: 0.78rem; color: var(--muted);
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 0.6rem;
+        }
+        .talk-meta .venue { color: var(--accent); font-weight: 500; }
+        .talk h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem; font-weight: 500;
+            color: var(--ink); line-height: 1.25;
+            margin-bottom: 0.5rem;
+        }
+        .talk h2 a {
+            color: inherit; text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.25s ease;
+        }
+        .talk h2 a:hover { border-bottom-color: var(--accent); }
+        .talk .coauthors {
+            font-size: 0.9rem; color: var(--muted);
+            font-style: italic; margin-bottom: 0.75rem;
+        }
+        .talk .description {
+            font-size: 0.95rem; color: var(--ink);
+            margin-bottom: 1rem;
+        }
+        .talk-actions {
+            display: flex; flex-wrap: wrap; gap: 1.25rem;
+            font-size: 0.85rem;
+        }
+        .talk-actions a {
+            color: var(--accent); text-decoration: none;
+            font-weight: 500; letter-spacing: 0.02em;
+            transition: color 0.25s ease;
+        }
+        .talk-actions a:hover { color: var(--accent-dark); text-decoration: underline; }
+        .talk-actions a::before { content: '→ '; }
+
+        .empty-note {
+            color: var(--muted); font-style: italic;
+            padding: 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--accent); color: var(--paper);
+            padding: 3rem 2rem; margin-top: 4rem; text-align: center;
+        }
+        footer a {
+            color: rgba(255,255,255,0.7); text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover { color: var(--paper); }
+        .footer-bottom { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none; background: none; border: none;
+            cursor: pointer; padding: 0.5rem;
+        }
+        .hamburger span {
+            display: block; width: 22px; height: 2px;
+            background: var(--ink); margin: 5px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .hamburger { display: block; }
+            .nav-container { flex-direction: row; flex-wrap: wrap; }
+            .nav-links {
+                display: none; flex-direction: column; width: 100%;
+                gap: 0; padding: 1rem 0 0.5rem;
+                border-top: 1px solid var(--border); margin-top: 0.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li a { display: block; padding: 0.6rem 0; }
+            .talk { padding: 1.5rem; }
+        }
+        @media (max-width: 600px) {
+            .page-header h1 { font-size: 2.5rem; }
+            .talk h2 { font-size: 1.35rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Muzeeb Shaik</a>
+            <button class="hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open');">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#interests">Research</a></li>
+                <li><a href="../index.html#background">Background</a></li>
+                <li><a href="../Muzeeb-Shaik-CV.pdf" target="_blank">CV</a></li>
+                <li><a href="../presentations/" class="active">Presentations</a></li>
+                <li><a href="../photography.html">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Presentations</h1>
+            <p>Talks and seminars from my research program in marketing strategy, education, and B2B. Each link opens the full slide deck in your browser — use arrow keys to navigate.</p>
+        </div>
+
+        <div class="talk-list">
+
+            <article class="talk">
+                <div class="talk-meta">
+                    <span class="venue">IU Kelley Marketing Brown Bag</span>
+                    <span class="date">April 17, 2026</span>
+                    <span class="format">Reveal.js · 1 hr</span>
+                </div>
+                <h2>
+                    <a href="experiential-learning-muzeeb/">Experiential Learning &amp; Gender Stereotypes in Science Education</a>
+                </h2>
+                <div class="coauthors">with Huanhuan Shi, Adithya Pattabhiramaiah &amp; Hari Sridhar</div>
+                <div class="description">
+                    Evidence from a field intervention in Bodoland, Assam — a Mobile Science Lab program with 5,216 students across 193 schools. The deck covers the field DiD results (≈ 20% reduction in <em>"science is for boys"</em> endorsement), heterogeneity by student gender and school size, and two follow-up mechanism studies: a scenario experiment with 151 Prolific adults and an EDSL synthetic-participant replication with 450 LLM agents.
+                </div>
+                <div class="talk-actions">
+                    <a href="experiential-learning-muzeeb/">Open slides</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2026 Muzeeb Shaik
+        </div>
+    </footer>
+</body>
+</html>
