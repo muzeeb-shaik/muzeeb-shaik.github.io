@@ -1,0 +1,682 @@
+---
+format:
+  revealjs:
+    scrollable: true
+    self-contained: true
+    slide-number: "c/t"
+    incremental: false
+    reference-location: document
+    progress: true
+    width: 1600
+    height: 900
+    logo: "images/kelley-marketing-revised-removebg-preview.png"
+    footer: ""
+    theme: ["simple", "styles.scss"]
+    code-link: true
+    multiplex: false
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+# {data-menu-title="Title Slide" style="text-align: left;" data-background-color="#FFFFFF"}
+
+::: {style="margin-left: 20px; margin-top: 20px;"}
+
+<h1 style="font-size: 2.75em; margin-top: 0; line-height: 1.1;">
+Experiential Learning<br>
+<span style="font-weight: lighter; color: #555;">& Gender Stereotypes in Science Education</span>
+</h1>
+
+<div style="font-size: 0.75em; text-transform: uppercase; letter-spacing: 4px; color: #990000; margin-top: 20px; font-weight: 600;">
+Evidence from a Field Intervention and Two Experiments
+</div>
+
+<br>
+
+<div style="font-size: 0.8em; color: #333; border-left: 3px solid #990000; padding-left: 15px;">
+**2026 ISMS Marketing Science Conference**
+</div>
+
+<br>
+
+**Muzeeb Shaik**
+<div style="font-size: 0.8em; color: #990000; margin-bottom: 20px;">
+Kelley School of Business | Indiana University, Bloomington
+</div>
+
+<div style="font-size: 0.7em; color: #888; margin-bottom: 40px;">
+**With:** Huanhuan Shi, Adithya Pattabhiramaiah, Hari Sridhar
+</div>
+
+:::
+
+------------------------------------------------------------------------
+
+## Women remain underrepresented in STEM: a persistent gap across all economic contexts {.smaller}
+
+::::::::::: columns
+:::::: {.column width="50%"}
+
+### Global Picture
+
+- Women: only **35%** of STEM graduates worldwide
+- In the US: **38.8%** of science bachelor's degrees
+- Only **26%** of the US STEM workforce
+- **Stakes:** substantial loss of productive capacity
+
+::::::
+
+:::::: {.column width="50%"}
+
+### India: Our Study Context
+
+- Women: **43%** of total undergraduate enrollment
+- But only **29%** in STEM disciplines
+- Fewer than **18%** of scientists/engineers in labor force
+- **Opportunity:** gender parity could add **10-12 million** STEM workers
+
+::::::
+:::::::::::
+
+::: {.callout-note icon="false"}
+## Today's Talk
+What if we could address gender stereotypes **indirectly**, by **redesigning the learning experience itself**?
+:::
+
+## Three categories of prior interventions, and their common limitation {.smaller}
+
+::::::::: columns
+::::: {.column width="33%"}
+
+### 1. Push Campaigns
+
+- Awareness campaigns
+- Mass communication
+- Public service announcements
+- Media messaging
+
+**Goal:** persuade individuals to reconsider stereotypes
+
+*(Paluck et al. 2021; Hermann et al. 2022)*
+
+:::::
+
+::::: {.column width="33%"}
+
+### 2. Girls-Only Programs
+
+- After-school STEM activities
+- Mentoring programs
+- Interactions with STEM professionals
+- Separation as confidence-building
+
+**Goal:** close information gaps, build exposure
+
+*(Dubetz & Wilson 2013; Levine et al. 2015)*
+
+:::::
+
+::::: {.column width="33%"}
+
+### 3. Gender-Congruent Environments
+
+- Female role models
+- Feminine classroom décor
+- Identity-affirming cues
+
+**Goal:** counteract masculine coding of science
+
+*(Master et al. 2016; Breda et al. 2023)*
+
+:::::
+:::::::::
+
+::: {.callout-warning}
+## The common limitation
+All three **explicitly position gender as the focal problem** and address it through direct persuasion or identity-targeted messaging, which can trigger **reactance**. Crucially, **none engage boys**, the group that holds stronger stereotypes and whose perceptions shape whether girls feel they belong in science.
+:::
+
+## Our approach: indirect change through equal-status contact {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Mechanism
+
+We change **what students observe**, not what they are told.
+
+- Hands-on science in **mixed-gender, equal-status teams**
+- Girls and boys do the same tasks, side by side
+- Stereotypes are challenged by **firsthand evidence**, not assertion
+
+:::::
+
+::::: {.column width="50%"}
+
+### Theoretical anchor
+
+**Intergroup contact theory** (Allport): contact reduces bias when it is
+
+- equal-status,
+- cooperative toward a shared goal,
+- institutionally sanctioned.
+
+The science lab supplies all three as a **byproduct of good pedagogy**.
+
+:::::
+::::::::::
+
+::: {.callout-tip}
+## Core insight
+Belief change is a **side effect** of the learning experience, which is what makes it credible and durable.
+:::
+
+## Setting: Mobile Science Labs in Bodoland, Assam {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### The intervention
+
+- **Mobile Science Labs (MSL)** visit rural public schools
+- **Eight 2-hour** hands-on sessions over one academic year
+- Curriculum built on **Kolb's experiential learning cycle**
+- Students work in **mixed-gender teams** on equipment they otherwise never access
+
+:::::
+
+::::: {.column width="50%"}
+
+![](images/msl.png){width="100%" style="border-radius: 6px;"}
+
+<div style="font-size: 0.72em; color: #555; text-align: center; margin-top: 4px;">
+A Mobile Science Lab session in a Bodoland village school.
+</div>
+
+:::::
+::::::::::
+
+::: {.callout-note}
+## Why this is a clean test
+Baseline classrooms are lecture-only with few labs; MSL introduces **equal-status collaboration where none existed before**, with the same facilitators and curriculum across schools. Gender is **never** the topic, only the unspoken structure of the activity.
+:::
+
+## Research Design {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Sample
+
+- **N = 5,216 students**, **196 public schools**, Grades 6-8
+- Treatment: **4,608** students received MSL
+- Control: **608** students, regular instruction
+- **Two-wave panel**: baseline and endline within the year
+
+:::::
+
+::::: {.column width="50%"}
+
+### Estimation
+
+Difference-in-differences with fixed effects:
+
+$Y_{ist} = \beta_1 Trt_s + \beta_2 Post_t + \beta_3 (Trt_s \times Post_t) + \alpha_{s} + \varepsilon_{ist}$
+
+- $\beta_3$ (Treatment $\times$ Post) is the **causal effect**
+- School and grade fixed effects
+- **SEs clustered at the school level**
+
+:::::
+::::::::::
+
+::: {.callout-note}
+## Two primary outcomes
+**Science knowledge** (% of grade-aligned items correct) and **gender-stereotype attitude** ("Science is for boys more than girls," 1-5).
+:::
+
+## Model-Free Evidence {.smaller}
+
+::: columns
+::: {.column width="50%"}
+### Science Knowledge
+![](images/Science%20Knowledge%20Score%20Bodoland.png){width="92%"}
+
+::: callout-note
+**Catch-up:** treatment starts lower (16%) but overtakes control (29%) by endline.
+:::
+:::
+
+::: {.column width="50%"}
+### Gender Stereotypes
+![](images/Gender%20Stereotype%20Attitudes%20Bodoland.png){width="92%"}
+
+::: callout-note
+Control attitudes stay stable; treatment lowers "science is for boys" beliefs.
+:::
+:::
+:::
+
+## Main Results: Difference-in-Differences {.smaller}
+
+:::: columns
+
+::: {.column width="72%"}
+
+::: {style="font-size: 0.72em;"}
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel A: Science Knowledge Score (0-100)</p>
+
+|  | No FE | School FE | School + Grade FE | School × Grade FE |
+|------|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | 13.763*** | 13.763*** | 13.763*** | 13.763*** |
+|  | (2.743) | (2.743) | (2.747) | (2.743) |
+| N | 10,432 | 10,432 | 10,432 | 10,432 |
+| R² | .076 | .255 | .317 | .398 |
+
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel B: Gender-Stereotype Attitudes (1-5)</p>
+
+|  | No FE | School FE | School + Grade FE | School × Grade FE |
+|------|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | -0.595** | -0.576** | -0.575** | -0.573** |
+|  | (0.186) | (0.188) | (0.188) | (0.188) |
+| N | 10,214 | 10,214 | 10,214 | 10,214 |
+| R² | .061 | .205 | .207 | .236 |
+
+<p style="text-align: center;">*SEs clustered at school level. *** p<.001, ** p<.01*</p>
+:::
+:::
+
+::: {.column width="28%"}
+
+::: {.callout-tip}
+## Knowledge
+**+13.8 points**
+
+≈ **88%** over baseline; stable across all specifications
+:::
+
+::: {.callout-important}
+## Stereotypes
+**-0.58 points**
+
+≈ **20%** reduction; robust to all controls
+:::
+
+:::
+
+::::
+
+## Heterogeneity and Broader Spillovers {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Who updates? (moderation by gender)
+
+- Knowledge gains are **equal** for boys and girls (Trt×Post×Male: 0.642, p = .836)
+- Stereotype reduction is **~3× larger for boys** (Trt×Post×Male: -0.658, p = .002)
+
+::: {.callout-note}
+Boys hold **higher baseline bias**, so equal-status contact gives them the most to update. Consistent with contact theory.
+:::
+
+:::::
+
+::::: {.column width="50%"}
+
+### Effects extend beyond the two primary outcomes
+
+- Positive effects on **12 of 14** science-attitude constructs (interest, self-efficacy, orientation, value)
+- **Perceptions of excellence:** treated students less likely to assume a top student is a boy
+  - Science domain: **β = 0.55***
+  - Language arts: **β = 0.45***
+
+:::::
+::::::::::
+
+## But the field bundles many features {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+The MSL program combines several things at once:
+
+- Experiential, hands-on pedagogy
+- **Mixed-gender** collaborative grouping
+- Equal-status peer interaction
+- Extended exposure over several sessions
+
+The field data **cannot isolate** whether stereotype reduction comes from the gender composition of groups or simply from hands-on learning.
+
+:::::
+
+::::: {.column width="45%"}
+
+::: {.callout-tip}
+## Two randomized studies
+**1. Scenario experiment** (N = 151 US adults, Prolific): vignettes that manipulate the gender composition of a science task.
+
+**2. Synthetic replication** (450 LLM agents): does the pattern hold under a very different participant source?
+:::
+
+:::::
+::::::::::
+
+## Study 2: Scenario Experiment {.smaller}
+
+:::::::::: columns
+::::: {.column width="48%"}
+
+### Design
+
+- Between-subjects, **3 conditions**: Mixed-Gender (Emily & Jake), Solo-Male, Solo-Female
+- Comic-strip vignettes of the **same** chemistry experiment; differ **only** in gender composition
+- **N = 151** US adults 18-30; 100% passed attention checks
+- Outcome: 4-item stereotype composite (α = .845)
+
+:::::
+
+::::: {.column width="52%"}
+![](images/scenario_experiment_bar.png){width="88%"}
+
+::: {.callout-tip}
+## Contact beyond role models
+Among **female participants**, Mixed-Gender (M = 1.31) scores **below** Solo-Female (M = 1.49): contact reduces stereotypes beyond a counter-stereotypical exemplar (d = -0.63, p = .021).
+:::
+
+:::::
+::::::::::
+
+## Study 3: Synthetic Participant Replication {.smaller}
+
+:::::::::: columns
+::::: {.column width="48%"}
+
+### Setup
+
+- **450 LLM agent surrogates** (150 per condition), Claude Sonnet API
+- Personas vary in age, gender, race, major, and science attitudes
+- Text versions of the same three vignettes; **projective** item framing
+- Builds on the *homo silicus* framework (Horton 2023)
+
+:::::
+
+::::: {.column width="52%"}
+![](images/edsl_synthetic_bar.png){width="88%"}
+
+::: {.callout-tip}
+## Same pattern, different source
+Mixed-Gender < Solo-Male replicates (d = 0.65, p < .001). A **directional robustness check**, not independent causal evidence: agents may reflect training-data regularities.
+:::
+
+:::::
+::::::::::
+
+## Contribution & Takeaway {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### What we add
+
+- A **pedagogy-first** intervention shifts stereotypes with **no gender messaging**
+- Causal field evidence at scale (**5,216 students, 196 schools**), triangulated by **two experiments**
+- Extends **shared consumption** and **social learning** from commercial to educational settings: belief change as experience, not persuasion
+
+:::::
+
+::::: {.column width="50%"}
+
+### Why it matters
+
+- Effects are broad (12 of 14 attitudes) and reach **perceptions of who belongs** in science
+- Boys, who hold the strongest priors, update the most: **key agents of change**
+- Equal-status contact, not just exposure to exemplars, is the active ingredient
+
+:::::
+::::::::::
+
+::: {.callout-important}
+## Bottom line
+Designing the **experience** well, not delivering the **message**, is what shifts both learning and stereotypes.
+:::
+
+## Thank You {.center data-background-color="#FFFFFF"}
+
+<div style="font-size: 1.4em; color: #555; margin-top: 20px; text-align: center;">
+Questions &amp; Comments?
+</div>
+
+<hr style="border-top: 3px solid #990000; width: 100px; margin: 20px auto;">
+
+<div style="font-size: 1.1em; font-weight: bold; text-align: center;">
+Muzeeb Shaik
+</div>
+<div style="font-size: 0.8em; color: gray; text-align: center;">
+Kelley School of Business | Indiana University</div>
+<div style="margin-top: 10px; text-align: center;">
+<a href="mailto:shaikmu@iu.edu" style="font-size: 0.85em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
+</div>
+
+## Appendix {.center visibility="uncounted" data-background-color="#FFFFFF"}
+
+<div style="margin-top: 120px; text-align: center;">
+<h1 style="font-size: 4em; color: #990000;">Appendix</h1>
+<div style="font-size: 1.2em; color: #555; margin-top: 10px;">Additional Results & Vignette Stimuli</div>
+</div>
+
+## Additional Results: Robustness Check (CEM Matching) {.smaller visibility="uncounted"}
+
+**Addressing baseline differences in science knowledge between treatment and control.**
+
+:::::: columns
+
+::: {.column width="50%"}
+
+**Pre-match balance**
+
+- Treatment: 15.87%
+- Control: 26.27%
+- Std. mean diff: -0.64
+
+**Post-match balance**
+
+- Both: 15.87%
+- Std. mean diff: 0.00
+- Balance achieved
+
+:::
+
+::: {.column width="50%"}
+
+**CEM-weighted results**
+
+- Treatment × Post: **4.62†**
+- (SE = 2.37, p = .053)
+- Confirms robustness
+
+✓ Knowledge effect holds after controlling for baseline proficiency; the stereotype effect was never confounded by a pre-period gap.
+
+:::
+
+::::::
+
+## Additional Results: Primary Outcome Measures {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Gender-stereotype attitude
+
+Single-item, baseline and endline:
+
+> **"I feel science is for boys more than girls."**
+
+- 5-point Likert (1 = Strongly Disagree, 5 = Strongly Agree)
+- Higher scores = stronger endorsement
+- N = 10,214 with complete two-wave responses
+
+*A concrete, single-referent belief, for which single-item measurement is appropriate (Bergkvist & Rossiter 2007).*
+
+:::
+
+::: {.column width="50%"}
+
+### Science knowledge score
+
+- Standardized, grade-appropriate test
+- Chemistry, physics, biology aligned with the state curriculum
+- Scored as percentage correct
+- N = 10,432 with complete two-wave responses
+- Administered at baseline and endline
+
+:::
+:::
+
+## Additional Results: Broader Science Attitudes (14 items) {.smaller visibility="uncounted"}
+
+### Four conceptual categories
+
+::: columns
+::: {.column width="50%"}
+
+**1. Interest & enjoyment**
+
+- I enjoy doing science activities
+- Science is one of my favorite subjects
+- I look forward to science class
+- I find science interesting
+
+**2. Self-efficacy**
+
+- I feel confident solving science problems
+- I can understand difficult science concepts
+- I am good at science
+
+:::
+
+::: {.column width="50%"}
+
+**3. Career intentions in STEM**
+
+- I want a career that uses science
+- I would like to be a scientist / engineer / doctor
+- I can picture myself working in a science field
+
+**4. Perceived social value**
+
+- Science helps solve important problems
+- My community values science
+- Science is useful in everyday life
+- Understanding science helps me make good decisions
+
+*All items: 5-pt Likert.*
+
+:::
+:::
+
+## Additional Results: Gendered Perception of Excellence {.smaller visibility="uncounted"}
+
+### Projective post-intervention item
+
+For each of two domains, respondents were asked:
+
+> **"A student performs very well in [science / language arts]. Is this student a boy or a girl?"**
+
+- Response options: **Boy** / **Girl** / **Could be either**
+- Administered separately for **science** and **language arts** excellence
+- Coded to capture attributions made **more equally across genders**
+- The language-arts version is a **placebo check**: does the intervention shift attributions only in the targeted domain?
+
+## Additional Results: Scenario Experiment (Composite) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Four items (5-pt Likert; α = .845)
+
+1. *"Boys are naturally better at science than girls."*
+2. *"Science is more of a 'boy thing' than a 'girl thing.'"*
+3. *"Girls can be just as good at science as boys."* **(reverse-coded)**
+4. *"Boys tend to be more interested in science than girls."*
+
+Item 3 reverse-coded, then all four averaged; higher composite = stronger endorsement.
+
+:::
+
+::: {.column width="50%"}
+
+### Sample & procedure
+
+- **N = 151** adults aged 18-30 on **Prolific**
+- US residents, at least secondary education
+- 59.6% female, 37.1% male, 3.3% non-binary
+- Approximately balanced across 3 conditions (n ≈ 50 each)
+- Viewed one vignette, then two attention checks before the stereotype items
+
+:::
+:::
+
+## Additional Results: Synthetic Replication (Agents) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Persona dimensions (each agent unique)
+
+- **Age** (18-30, matching the Prolific sample)
+- **Gender** (balanced across male, female, non-binary)
+- **Race/ethnicity** (US census-matched)
+- **Academic major** (STEM / non-STEM / undeclared)
+- **Baseline science attitudes** (low / moderate / high)
+
+### Stimuli
+
+- **Text-based** versions of the same three conditions
+- 150 agents per condition (N = 450)
+
+:::
+
+::: {.column width="50%"}
+
+### Execution (Blanchard et al. 2025)
+
+- **Model:** Claude Sonnet via Anthropic API
+- Fixed model version, controlled temperature
+- Complete response logging, including agent reasoning
+
+### Item framing vs. human study
+
+- **Projective framing** (third-person; Luchs et al. 2010) to reduce social-desirability bias
+- Item content otherwise mirrors the human experiment
+
+:::
+:::
+
+## Vignette Stimuli: The Three Conditions {.smaller visibility="uncounted"}
+
+<div style="display: flex; justify-content: center; gap: 18px; margin-top: 10px;">
+
+<div style="width: 480px; text-align: center;">
+<div style="font-weight: bold; color: #990000; margin-bottom: 6px; font-size: 0.95em;">Mixed-Gender (Emily & Jake)</div>
+<img src="images/scenario_stimulus_mixed_gender.png" width="480" style="display: block; width: 480px; height: auto; border: 1px solid #ccc; border-radius: 6px;"/>
+</div>
+
+<div style="width: 480px; text-align: center;">
+<div style="font-weight: bold; color: #990000; margin-bottom: 6px; font-size: 0.95em;">Solo-Male (Jake)</div>
+<img src="images/scenario_stimulus_solo_male.png" width="480" style="display: block; width: 480px; height: auto; border: 1px solid #ccc; border-radius: 6px;"/>
+</div>
+
+<div style="width: 480px; text-align: center;">
+<div style="font-weight: bold; color: #990000; margin-bottom: 6px; font-size: 0.95em;">Solo-Female (Emily)</div>
+<img src="images/scenario_stimulus_solo_female.png" width="480" style="display: block; width: 480px; height: auto; border: 1px solid #ccc; border-radius: 6px;"/>
+</div>
+
+</div>
+
+<div style="font-size: 0.8em; color: #555; margin-top: 14px; text-align: center; max-width: 1200px; margin-left: auto; margin-right: auto;">
+All three vignettes depict the same chemistry experiment (temperature effects on reaction rate) with identical dialogue content; only the gender composition of the protagonists varies.
+</div>
