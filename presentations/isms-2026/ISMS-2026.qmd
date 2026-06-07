@@ -190,10 +190,18 @@ Belief change is a **side effect** of the learning experience, which is what mak
 
 ::::: {.column width="50%"}
 
-![](images/msl.png){width="100%" style="border-radius: 6px;"}
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
 
-<div style="font-size: 0.72em; color: #555; text-align: center; margin-top: 4px;">
-A Mobile Science Lab session in a Bodoland village school.
+<div style="text-align: center; width: 100%;">
+<img src="images/msl_vehicle_1.jpeg" style="width: 75%; border-radius: 4px;"/>
+<div style="font-size: 0.75em; color: #555; margin-top: 4px;">Mobile Science Lab Vehicle</div>
+</div>
+
+<div style="display: flex; gap: 6px; width: 75%; justify-content: center;">
+<img src="images/hands_on_learning_1.jpeg" style="width: 49%; height: auto; object-fit: contain; border-radius: 4px;"/>
+<img src="images/hands_on_learning_2.jpeg" style="width: 49%; height: auto; object-fit: contain; border-radius: 4px;"/>
+</div>
+
 </div>
 
 :::::
