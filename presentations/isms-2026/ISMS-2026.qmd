@@ -465,12 +465,7 @@ Indiana University - Bloomington</div>
 <a href="mailto:shaikmu@iu.edu" style="font-size: 0.8em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
 </div>
 
-## Appendix {.center visibility="uncounted" data-background-color="#FFFFFF"}
-
-<div style="margin-top: 120px; text-align: center;">
-<h1 style="font-size: 4em; color: #990000;">Appendix</h1>
-<div style="font-size: 1.2em; color: #555; margin-top: 10px;">Additional Results & Vignette Stimuli</div>
-</div>
+# Appendix {visibility="uncounted"}
 
 ## Additional Results: Robustness Check (CEM Matching) {.smaller visibility="uncounted"}
 
