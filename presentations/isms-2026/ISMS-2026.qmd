@@ -446,19 +446,23 @@ Designing the **experience** well, not delivering the **message**, is what shift
 
 ## Thank You {.center data-background-color="#FFFFFF"}
 
-<div style="font-size: 1.4em; color: #555; margin-top: 20px; text-align: center;">
-Questions &amp; Comments?
+<div style="font-size: 1.5em; color: #555; margin-top: 20px;">
+Questions & Comments?
 </div>
 
-<hr style="border-top: 3px solid #990000; width: 100px; margin: 20px auto;">
+<hr style="border-top: 3px solid #990000; width: 100px; margin: 20px 0;">
 
-<div style="font-size: 1.1em; font-weight: bold; text-align: center;">
+<div style="font-size: 1.2em; font-weight: bold;">
 Muzeeb Shaik
 </div>
-<div style="font-size: 0.8em; color: gray; text-align: center;">
-Kelley School of Business | Indiana University</div>
-<div style="margin-top: 10px; text-align: center;">
-<a href="mailto:shaikmu@iu.edu" style="font-size: 0.85em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
+<div style="font-size: 0.8em; color: gray;">
+Assistant Professor</div>
+<div style="font-size: 0.8em; color: gray;">
+Kelley School of Business</div>
+<div style="font-size: 0.8em; color: gray;">
+Indiana University - Bloomington</div>
+<div style="margin-top: 10px;">
+<a href="mailto:shaikmu@iu.edu" style="font-size: 0.8em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
 </div>
 
 ## Appendix {.center visibility="uncounted" data-background-color="#FFFFFF"}
