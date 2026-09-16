@@ -1,0 +1,764 @@
+---
+format:
+  revealjs:
+    scrollable: true
+    self-contained: true
+    slide-number: "c/t"
+    incremental: false
+    reference-location: document
+    progress: true
+    width: 1600
+    height: 900
+    logo: "images/kelley-marketing-revised-removebg-preview.png"
+    footer: ""
+    theme: ["simple", "styles.scss"]
+    code-link: true
+    multiplex: false
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+# {data-menu-title="Title Slide" style="text-align: left;" data-background-color="#FFFFFF"}
+
+```{=html}
+<style>
+/* Deck-specific: shrink the Kelley logo (overrides the shared styles.scss) */
+.reveal .slide-logo { height: 58px !important; width: auto !important; max-width: unset !important; max-height: unset !important; }
+</style>
+```
+
+::: {style="margin-left: 20px; margin-top: 20px;"}
+
+<h1 style="font-size: 2.75em; margin-top: 0; line-height: 1.1;">
+Experiential Learning<br>
+<span style="font-weight: lighter; color: #555;">& Gender Stereotypes in Science Education</span>
+</h1>
+
+<br>
+
+<div style="font-size: 0.8em; color: #333; border-left: 3px solid #990000; padding-left: 15px;">
+**2026 China India Insights Conference**<br>
+<span style="font-size: 0.9em; color: #555;">Carey Business School, Johns Hopkins University</span>
+</div>
+
+<br>
+
+**Muzeeb Shaik**
+<div style="font-size: 0.8em; color: #990000; margin-bottom: 20px;">
+Kelley School of Business | Indiana University, Bloomington
+</div>
+
+<div style="font-size: 0.7em; color: #888; margin-bottom: 40px;">
+**With:** John Costello, Huanhuan Shi, Adithya Pattabhiramaiah, Hari Sridhar
+</div>
+
+:::
+
+------------------------------------------------------------------------
+
+## Women remain underrepresented in STEM {.smaller}
+
+::::::::::: columns
+:::::: {.column width="50%"}
+
+### Global Picture
+
+- Women: only **35%** of STEM graduates worldwide
+- In the US: **38.8%** of science bachelor's degrees
+- Only **26%** of the US STEM workforce
+
+::::::
+
+:::::: {.column width="50%" .fragment}
+
+### India: Our Study Context
+
+- Women: **43%** of total undergraduate enrollment
+- But only **29%** in STEM disciplines
+- Fewer than **18%** of scientists and engineers in the labor force
+
+::::::
+:::::::::::
+
+::: {.callout-note icon="false" .fragment}
+## Today's Talk
+What if we could address gender stereotypes **indirectly**, by **redesigning the learning experience itself**?
+:::
+
+## Three categories of prior interventions {.smaller}
+
+::::::::: columns
+::::: {.column width="33%" .fragment}
+
+### 1. Push Campaigns
+
+- Awareness campaigns
+- Mass communication
+- Public service announcements
+- Media messaging
+
+**Goal:** persuade individuals to reconsider stereotypes
+
+<span style="font-size:0.66em; color:#888;">Paluck et al. 2021; Hermann et al. 2022</span>
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### 2. Girls-Only Programs
+
+- After-school STEM activities
+- Mentoring programs
+- Interactions with STEM professionals
+- Separation as confidence-building
+
+**Goal:** close information gaps, build exposure
+
+<span style="font-size:0.66em; color:#888;">Dubetz & Wilson 2013; Levine et al. 2015</span>
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### 3. Gender-Congruent Environments
+
+- Female role models
+- Feminine classroom décor
+- Identity-affirming cues
+
+**Goal:** counteract the masculine coding of science
+
+<span style="font-size:0.66em; color:#888;">Master et al. 2016; Breda et al. 2023</span>
+
+:::::
+:::::::::
+
+::: {.callout-warning .fragment}
+## The common limitation
+All three **explicitly position gender as the focal problem** and address it through direct persuasion or identity-targeted messaging, which can trigger **reactance**. Crucially, **none engage boys**, the group that holds the stronger stereotypes and whose perceptions shape whether girls feel they belong in science.
+:::
+
+## Our approach: indirect change through equal-status contact {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Mechanism
+
+We change **what students observe**, not what they are told.
+
+- Hands-on science in **mixed-gender, equal-status teams**
+- Girls and boys do the same tasks, side by side
+- Stereotypes are challenged by **firsthand evidence**, not assertion
+
+:::::
+
+::::: {.column width="50%"}
+
+### Theoretical anchor
+
+**Intergroup contact theory** (Allport): prejudice declines under four conditions of optimal contact:
+
+- Equal group status within the situation
+- Common goals
+- Intergroup cooperation
+- Authority support
+
+The **MSL program** provides all four as a **byproduct of experiential-learning pedagogy**.
+
+:::::
+::::::::::
+
+## Setting: Mobile Science Labs in Bodoland, Assam {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### The intervention
+
+- **Mobile Science Labs (MSL)** visit rural public schools
+- **Eight 2-hour** hands-on sessions over one academic year
+- Curriculum built on **Kolb's experiential learning cycle**
+- Students work in **mixed-gender teams** on equipment they otherwise never access
+
+:::::
+
+::::: {.column width="50%"}
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px;">
+
+<div style="text-align: center; width: 100%;">
+<img src="images/msl_vehicle_1.jpeg" style="width: 58%; max-height: 190px; object-fit: contain; border-radius: 4px;"/>
+<div style="font-size: 0.7em; color: #555; margin-top: 2px;">Mobile Science Lab Vehicle</div>
+</div>
+
+<div style="display: flex; gap: 6px; width: 78%; justify-content: center;">
+<img src="images/hands_on_learning_1.jpeg" style="width: 49%; max-height: 150px; object-fit: contain; border-radius: 4px;"/>
+<img src="images/hands_on_learning_2.jpeg" style="width: 49%; max-height: 150px; object-fit: contain; border-radius: 4px;"/>
+</div>
+
+</div>
+
+:::::
+::::::::::
+
+## Research Design {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Sample (Grade 6)
+
+- **N = 2,779 students**, **156 public schools** in Bodoland
+- Treatment: **2,171** students, **108** schools received MSL
+- Control: **608** students, **48** matched schools, regular instruction
+- **Two-wave panel**: baseline and endline within the year
+- **Two outcomes:**
+  - Gender-stereotype attitude ("Science is for boys more than girls," 1-5)
+  - Science knowledge (% of grade-aligned items correct, 0-100)
+
+:::::
+
+::::: {.column width="50%" .fragment}
+
+### Estimation
+
+Difference-in-differences with student and period fixed effects:
+
+$Y_{it} = \beta\,(Trt_s \times Post_t) + \alpha_i + \tau_t + \varepsilon_{it}$
+
+- $\beta$ (Treatment $\times$ Post) is the **causal effect**
+- **Student** fixed effects $\alpha_i$: within-student change
+- **Period** fixed effects $\tau_t$; **SEs clustered at the school level**
+
+:::::
+::::::::::
+
+## Model-Free Evidence {.smaller}
+
+<div style="text-align:center;">
+<img src="images/model_free_grade6.png" style="width: 76%;"/>
+</div>
+
+## Main Results: Difference-in-Differences {.smaller}
+
+:::: columns
+
+::: {.column width="72%"}
+
+::: {style="font-size: 0.72em;"}
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel A: Gender-Stereotype Attitude (1-5)</p>
+
+|  | No FE | School FE | Student + Period FE |
+|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | -0.816 | -0.785 | **-0.786** |
+|  | (0.200) | (0.202) | (0.203) |
+| N (student-waves) | 5,407 | 5,407 | 5,258 |
+| R² | .093 | .275 | .568 |
+
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel B: Science Knowledge Score (0-100)</p>
+
+|  | No FE | School FE | Student + Period FE |
+|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | 20.58 | 20.58 | **20.58** |
+|  | (3.13) | (3.13) | (3.13) |
+| N (student-waves) | 5,558 | 5,558 | 5,558 |
+| R² | .138 | .385 | .653 |
+
+<p style="text-align: center;">*SEs clustered at the school level. Both Treatment × Post: p < .001. Column (3) is the primary specification.*</p>
+:::
+:::
+
+::: {.column width="28%"}
+
+::: {.callout-important .fragment}
+## Stereotypes
+**-0.79 points**
+
+≈ **0.61 SD**, roughly a **quarter** of the control baseline (2.84); stable across all specifications
+:::
+
+::: {.callout-tip .fragment}
+## Knowledge
+**+20.6 points**
+
+large and significant; treated students overtake control by endline
+:::
+
+:::
+
+::::
+
+## Heterogeneity in the Effects {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+### Moderation by student gender
+
+::: {style="font-size: 0.74em;"}
+|  | Gender-Stereotype | Science Knowledge |
+|------|:------:|:------:|
+| [**Treatment × Post × Male**]{.my-crimson} | **-0.556** | -0.725 |
+|  | (0.218), p = .012 | (3.442), p = .833 |
+| Treatment × Post | -0.550 | 20.952 |
+| Post × Male | 0.540 | -1.275 |
+| Num. Obs. | 5,258 | 5,558 |
+
+*Student + period FE; SEs clustered at school. (Paper Table 3.)*
+:::
+
+:::::
+
+::::: {.column width="48%"}
+
+- **Stereotype reduction ~2× larger for boys:** marginal DiD **-1.11** [-1.55, -0.66] vs. girls **-0.55** [-1.00, -0.10]; **knowledge gains equal** across gender
+- Boys and girls start at **nearly identical baselines** (2.96 vs 2.94), so this is **not** a floor effect; consistent with contact theory
+- Somewhat **larger reductions in bigger schools** (Treatment × Post × School size, p = .027)
+- **No moderation** by the girls' share in the grade, nor by grade size
+
+:::::
+::::::::::
+
+## Robustness of the Stereotype Effect {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+The **-0.79** stereotype effect is stable across estimators that address non-random school selection:
+
+| Specification | Estimate | 95% CI |
+|------|------|------|
+| Student + period FE (primary) | -0.786 | [-1.18, -0.39] |
+| School fixed effects | -0.785 | [-1.18, -0.39] |
+| Inverse-propensity weighting | -0.875 | [-1.32, -0.43] |
+| Entropy balancing | -0.824 | [-1.27, -0.38] |
+| Doubly-robust DiD (AIPW) | -0.827 | [-1.18, -0.48] |
+
+*All p < .001. SEs clustered at the school level.*
+
+:::::
+
+::::: {.column width="45%"}
+
+::: {.callout-tip}
+## Selection on unobservables
+An unobserved confounder would need to be **~56× stronger** than all observed covariates combined to nullify the effect (Oster 2019).
+:::
+
+::: {.callout-note}
+## Small-sample inference
+Significance holds under a school-level **permutation test** (p = .004), **CR2** (p < .001), and a **wild cluster bootstrap** (p = .002).
+:::
+
+*Science knowledge attenuates to ~15-16 points under reweighting but stays large and significant.*
+
+:::::
+::::::::::
+
+## Effects extend beyond the two primary outcomes {.smaller}
+
+:::::::::: columns
+::::: {.column width="58%"}
+
+### Broader science attitudes (14 items)
+
+<img src="images/forest_grade6.png" style="width: 100%; max-height: 620px; object-fit: contain;"/>
+
+<div style="font-size: 0.72em; color:#555; text-align:center;">All 14 items move positively and are individually significant (interest, self-efficacy, career intent, value).</div>
+
+:::::
+
+::::: {.column width="42%" .fragment}
+
+### Perceptions of excellence
+
+In a projective vignette, treated students are **less likely to assume a top student is a boy**:
+
+- Science domain: **β = 0.55** (p < .001)
+- Language arts: **β = 0.45** (p < .001), a placebo domain
+
+The shift reaches **who belongs**, and extends **beyond science** into language arts.
+
+:::::
+::::::::::
+
+## But the field bundles many features {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+The MSL program combines several things at once:
+
+- Experiential, hands-on pedagogy
+- **Mixed-gender** collaborative grouping
+- Equal-status peer interaction
+- Extended exposure over several sessions
+- The field data **cannot isolate** which of these drives the effect, nor the psychological process behind it
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-tip}
+## Two pre-registered experiments
+**Study 2 (2×2, N = 1,207):** crosses gender grouping with instructional approach to isolate what does the work.
+
+**Study 3 (N = 605):** measures the psychological mechanisms behind the effect.
+:::
+
+:::::
+::::::::::
+
+## Study 2: Isolating the Mixed-Gender Mechanism {.smaller #study2}
+
+:::::::::: columns
+::::: {.column width="46%"}
+
+### Design
+
+- **N = 1,207** US adults (CloudResearch), pre-registered
+- **2 × 2** between-subjects: gender grouping (single vs. mixed) × instruction (standard vs. experiential)
+- Participants imagine being a student in a described school
+- Outcome: projective **gender-stereotypical behavioral preference** (1-7; Good 2001)
+
+::: {.callout-note}
+Both features help a little alone; **together they do the work**.
+:::
+
+:::::
+
+::::: {.column width="54%" .fragment}
+
+::: {.r-stack}
+<img src="images/study2_grouping.png" style="width: 92%;"/>
+
+<img src="images/study2_instruction.png" class="fragment" style="width: 92%;"/>
+:::
+
+::: {.callout-tip}
+## The interaction (p = .048)
+Mixed-gender grouping cuts stereotypes only under **experiential** learning (3.62 vs. 4.12); equivalently, experiential learning helps only when groups are **mixed**. *(Click to switch the simple-effect view.)*
+:::
+
+:::::
+::::::::::
+
+::: {style="font-size:0.6em; text-align:right; color:#777; margin-top:2px;"}
+[Study 2 details](#study2-details) &nbsp;·&nbsp; [Skip Study 3 ⏭](#conclusion)
+:::
+
+## Study 3: The Psychological Mechanisms {.smaller #study3}
+
+:::::::::: columns
+::::: {.column width="46%"}
+
+### Design
+
+- **N = 605** US adults, pre-registered
+- **Control** (standard, gender-segregated) vs. **mixed-gender experiential learning**
+- Replicates the field effect: stereotypical beliefs **4.13 → 3.37** (p < .001)
+- Four contact-theory mechanisms measured:
+  - [**Affective:**]{style="color:#1B7F4B;"} empathy, (reduced) anxiety
+  - [**Cognitive:**]{style="color:#2C6FB5;"} trust, knowledge
+
+::: {.callout-note}
+All four mechanisms move in the predicted direction and each mediates when tested **on its own**.
+:::
+
+:::::
+
+::::: {.column width="54%" .fragment}
+<img src="images/study3_means.png" style="width: 100%;"/>
+
+::: {.callout-tip}
+## Condition means
+Experiential learning **lowers stereotypical beliefs** and moves all four mechanisms as predicted (all p < .001).
+:::
+
+:::::
+::::::::::
+
+::: {style="font-size:0.6em; text-align:right; color:#777; margin-top:2px;"}
+[Study 3 details](#study3-details) &nbsp;·&nbsp; [Skip to Conclusion ⏭](#conclusion)
+:::
+
+## Study 3: What Carries the Effect (Parallel Mediation) {.smaller}
+
+:::::::::: columns
+::::: {.column width="66%"}
+
+<img src="images/mediation_diagram_colored.png" style="width: 100%; max-height: 600px; object-fit: contain;"/>
+
+:::::
+
+::::: {.column width="34%"}
+
+### The affective pathways carry the effect
+
+With all four mechanisms entered **together**, only the affective routes survive:
+
+- [**Empathy**]{style="color:#1B7F4B;"}: indirect = **-.083** [-.159, -.026]
+- [**Reduced anxiety**]{style="color:#1B7F4B;"}: indirect = **-.122** [-.202, -.054]
+- Cognitive [**trust**]{style="color:#2C6FB5;"} and [**knowledge**]{style="color:#2C6FB5;"} attenuate to non-significance
+
+::: {.callout-note}
+Consistent with Pettigrew & Tropp (2008): affect, more than cognition, drives contact effects.
+:::
+
+:::::
+::::::::::
+
+## Contribution & Takeaway {.smaller #conclusion}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### What we add
+
+- A **pedagogy-first** intervention shifts stereotypes with **no gender messaging**
+- Causal field evidence at scale (**2,779 students, 156 schools**), triangulated by **two pre-registered experiments**
+- Extends **service design**: the group structure of a service can reshape beliefs about who belongs, beyond the outcomes the service was built to deliver
+
+:::::
+
+::::: {.column width="50%"}
+
+### Why it matters
+
+- Effects are broad (all 14 attitudes) and reach **perceptions of who belongs** in science
+- Boys, who hold the strongest priors, update the most: **key agents of change**
+- Equal-status collaboration under **experiential** learning is the active ingredient, working through **empathy and reduced anxiety**
+
+:::::
+::::::::::
+
+::: {.callout-important}
+## Bottom line
+Designing the **experience** well, not delivering the **message**, is what shifts both learning and stereotypes.
+:::
+
+## Thank You {.center data-background-color="#FFFFFF"}
+
+<div style="font-size: 1.5em; color: #555; margin-top: 20px;">
+Questions & Comments?
+</div>
+
+<hr style="border-top: 3px solid #990000; width: 100px; margin: 20px 0;">
+
+<div style="font-size: 1.2em; font-weight: bold;">
+Muzeeb Shaik
+</div>
+<div style="font-size: 0.8em; color: gray;">
+Assistant Professor</div>
+<div style="font-size: 0.8em; color: gray;">
+Kelley School of Business</div>
+<div style="font-size: 0.8em; color: gray;">
+Indiana University - Bloomington</div>
+<div style="margin-top: 10px;">
+<a href="mailto:shaikmu@iu.edu" style="font-size: 0.8em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
+</div>
+
+# Appendix {visibility="uncounted"}
+
+## Study 1: Robustness of the Science Knowledge Effect {.smaller visibility="uncounted"}
+
+**Addressing baseline differences in science knowledge between treatment and control.**
+
+The raw **+20.6** point gain attenuates under matching and reweighting on baseline proficiency, but stays large and significant.
+
+| Specification | Estimate | 95% CI | p |
+|------|------|------|------|
+| Student + period FE (primary) | 20.58 | [14.46, 26.71] | < .001 |
+| School fixed effects | 20.58 | [14.46, 26.71] | < .001 |
+| Inverse-propensity weighting | 14.53 | [7.95, 21.10] | < .001 |
+| Entropy balancing | 15.83 | [9.27, 22.39] | < .001 |
+| Doubly-robust DiD (AIPW) | 15.52 | [7.47, 23.58] | < .001 |
+
+✓ The knowledge effect holds after controlling for baseline proficiency; the stereotype effect was never confounded by a pre-period gap.
+
+## Study 1: Primary Outcome Measures {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Gender-stereotype attitude
+
+Single-item, baseline and endline:
+
+> **"I feel science is for boys more than girls."**
+
+- 5-point Likert (1 = Strongly Disagree, 5 = Strongly Agree)
+- Higher scores = stronger endorsement
+- A concrete, single-referent belief, for which single-item measurement is appropriate (Bergkvist & Rossiter 2007)
+
+:::
+
+::: {.column width="50%"}
+
+### Science knowledge score
+
+- Standardized, grade-appropriate test
+- Chemistry, physics, biology aligned with the state curriculum
+- Scored as percentage correct (0-100)
+- Administered at baseline and endline
+
+:::
+:::
+
+## Study 1: Gendered Perception of Excellence (Vignette) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+<div style="text-align:center; font-weight:bold; color:#990000;">High-performing science student</div>
+<img src="images/vignette_science_grade6.png" style="width: 92%;"/>
+:::
+::: {.column width="50%"}
+<div style="text-align:center; font-weight:bold; color:#990000;">High-performing language-arts student</div>
+<img src="images/vignette_arts_grade6.png" style="width: 92%;"/>
+:::
+:::
+
+<div style="text-align:center; font-size: 0.85em; color:#555;">
+Treated students are more likely to attribute excellence to a girl in **both** domains (science β = 0.55, language arts β = 0.45; difference n.s.), so the intervention shifts broader beliefs about gender and competence, not perceptions of science alone.
+</div>
+
+## Study 1: Marginal Effects by Gender {.smaller visibility="uncounted"}
+
+<div style="text-align:center;">
+<img src="images/marginal_did_gender_grade6.png" style="width: 78%;"/>
+</div>
+
+<div style="text-align:center; font-size: 0.85em; color:#555;">
+Knowledge gains are statistically equal for boys and girls; the stereotype reduction is about twice as large for boys, though both are significant.
+</div>
+
+## Study 2: How It Was Run and the Measure {.smaller visibility="uncounted" #study2-details}
+
+::: columns
+::: {.column width="52%"}
+
+### Procedure
+
+- **N = 1,207** US adults on CloudResearch Connect (M~age~ = 44, 62% female); pre-registered
+- Participants **imagine being a student** in a described public school ("put yourself in a student's shoes")
+- **Gender-grouping (seating) manipulation:** single-gender = "boys and girls sit on separate sides of the classroom"; mixed-gender = "boys and girls sit together"
+- **Instruction manipulation:** standard = lectures and individual assignments; experiential = a program where groups "operate scientific equipment, observe phenomena, discuss results, and draw conclusions"
+- Suspicion probe at the end; no participant identified the hypothesized interaction
+
+:::
+
+::: {.column width="48%"}
+
+### The measure (dependent variable)
+
+Single-item **gender-stereotypical behavioral preference** (Good 2001), adapted to a projective framing (Luchs et al. 2010):
+
+> *"Suppose there is a team competition in this school to see which team is smarter in math and sciences. To what extent do you think the average student in this school would prefer to have men on their team, not women?"*
+
+- **1** = "not at all" to **7** = "very much so"; higher = stronger stereotype
+- Asking about **"the average student"** (projective) reduces socially desirable responding
+
+:::
+:::
+
+::: {style="font-size:0.62em; color:#777; margin-top:2px;"}
+[◂ Back to Study 2](#study2)
+:::
+
+## Study 2: Design and Results (detail) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### 2 × 2 design
+
+- **Gender grouping:** single-gender vs. mixed-gender seating and project groups
+- **Instruction:** standard (lecture) vs. experiential (hands-on collaboration)
+- Same described school; conditions differ only in these two features
+- Projective DV reduces socially desirable responding (Luchs et al. 2010)
+
+:::
+
+::: {.column width="50%"}
+
+### Key statistics
+
+- **Main effect, grouping:** mixed 3.83 vs. single 4.17 (p < .001)
+- **Main effect, instruction:** experiential 3.87 vs. standard 4.13 (p = .001)
+- **Interaction:** F(1, 1203) = 3.91, **p = .048**
+- **Simple effect (experiential):** mixed 3.62 vs. single 4.12 (p < .001), > 8× the standard-instruction simple effect
+
+:::
+:::
+
+## Study 3: How It Was Run and the Measures {.smaller visibility="uncounted" #study3-details}
+
+::: columns
+::: {.column width="50%"}
+
+### Procedure and stereotype measure
+
+- **N = 605** US adults (CloudResearch; M~age~ = 43, 55% female); pre-registered; two conditions
+- **Imagine being a student**; both conditions told the school normally has "gender-segregated rows with limited cross-gender interaction"
+- **Experiential condition:** the school launched a program where "students of all genders work together to conduct experiments, observe phenomena, and discuss results" in small mixed-gender groups
+- **Stereotype DV** (3 items, α = .876; Lane, Goh & Driver-Linn 2012), projective:
+  - "Men are just better at science than women"
+  - "I would go to a man instead of a woman for help with a math or science problem"
+  - "Genders differ in their skill at science" (women ↔ men much better)
+
+:::
+
+::: {.column width="50%"}
+
+### The four contact mechanisms
+*(projective, 1–7, presented in randomized order)*
+
+- [**Empathy** — affective]{style="color:#1B7F4B;"}; 3 items, α = .882 (Swart et al. 2011): *"If a student of the opposite gender were upset, I would also feel upset"*
+- [**Anxiety** — affective]{style="color:#1B7F4B;"}; 6 items, α = .928 (Wölfer et al. 2019): an imagined cross-gender interaction felt anxious / nervous / awkward / (reverse) accepted, comfortable, at ease
+- [**Trust** — cognitive]{style="color:#2C6FB5;"}; 4 items, α = .940 (Turner et al. 2007): *"Students of the opposite gender are trustworthy"*
+- [**Knowledge** — cognitive]{style="color:#2C6FB5;"}; 4 items, α = .884 (Zagefka et al. 2017): know about the opposite gender's interests, abilities, and values
+
+:::
+:::
+
+::: {style="font-size:0.62em; color:#777; margin-top:2px;"}
+[◂ Back to Study 3](#study3)
+:::
+
+## Study 3: Mechanisms and Mediation (detail) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Condition means (control → experiential)
+
+- **Stereotypical beliefs:** 4.13 → 3.37 (p < .001)
+- **Trust:** 3.81 → 4.45 (p < .001)
+- **Knowledge:** 3.46 → 4.28 (p < .001)
+- **Empathy:** 4.24 → 4.77 (p < .001)
+- **Anxiety:** 4.68 → 4.17 (reduced, p < .001)
+
+:::
+
+::: {.column width="50%"}
+
+### Mediation (PROCESS Model 4)
+
+**Simple mediation (each significant):**
+
+- Trust -.195, Knowledge -.182, Empathy -.147, Anxiety -.171
+
+**Parallel mediation (all four together):**
+
+- **Empathy -.083** [-.159, -.026] ✓
+- **Anxiety -.122** [-.202, -.054] ✓
+- Trust -.072 (n.s.), Knowledge +.030 (n.s.)
+
+*Affective pathways carry the effect.*
+
+:::
+:::
