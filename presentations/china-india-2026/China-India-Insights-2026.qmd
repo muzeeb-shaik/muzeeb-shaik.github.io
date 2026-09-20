@@ -41,7 +41,7 @@ Experiential Learning<br>
 
 <div style="font-size: 0.8em; color: #333; border-left: 3px solid #990000; padding-left: 15px;">
 **2026 China India Insights Conference**<br>
-<span style="font-size: 0.9em; color: #555;">Carey Business School, Johns Hopkins University</span>
+<span style="font-size: 0.9em; color: #002D72; font-weight: 600;">Carey Business School, Johns Hopkins University</span>
 </div>
 
 <br>
