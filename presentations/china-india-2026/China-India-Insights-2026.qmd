@@ -519,9 +519,9 @@ Consistent with Pettigrew & Tropp (2008): affect, more than cognition, drives co
 
 ### What we add
 
-- A **pedagogy-first** intervention shifts stereotypes with **no gender messaging**
-- Causal field evidence at scale (**2,779 students, 156 schools**), triangulated by **two pre-registered experiments**
-- Extends **service design**: the group structure of a service can reshape beliefs about who belongs, beyond the outcomes the service was built to deliver
+- **Service design shapes more than the service delivers:** *how* students participate (experiential) and *with whom* (mixed-gender) reshape beliefs about who belongs, with **no gender messaging**
+- Shared experiences let people **learn not just with others, but about others**
+- Field evidence at scale (**2,779 students, 156 schools**), triangulated by **two pre-registered experiments**
 
 :::::
 
@@ -529,16 +529,16 @@ Consistent with Pettigrew & Tropp (2008): affect, more than cognition, drives co
 
 ### Why it matters
 
-- Effects are broad (all 14 attitudes) and reach **perceptions of who belongs** in science
-- Boys, who hold the strongest priors, update the most: **key agents of change**
-- Equal-status collaboration under **experiential** learning is the active ingredient, working through **empathy and reduced anxiety**
+- The two features are **complementary**: mixing genders reduces stereotypes mainly under **experiential** learning
+- The effect runs through **greater empathy and reduced anxiety** toward the other gender
+- Reaches the **boys** girls-only formats leave untouched; a scalable lever for **SDG 4 & 5**
 
 :::::
 ::::::::::
 
 ::: {.callout-important}
 ## Bottom line
-Designing the **experience** well, not delivering the **message**, is what shifts both learning and stereotypes.
+The **structure** of a service can change what participants believe about one another, beyond what the service itself teaches.
 :::
 
 ## Thank You {.center data-background-color="#FFFFFF"}
@@ -690,7 +690,7 @@ Single-item **gender-stereotypical behavioral preference** (Good 2001), adapted 
 - **Main effect, grouping:** mixed 3.83 vs. single 4.17 (p < .001)
 - **Main effect, instruction:** experiential 3.87 vs. standard 4.13 (p = .001)
 - **Interaction:** F(1, 1203) = 3.91, **p = .048**
-- **Simple effect (experiential):** mixed 3.62 vs. single 4.12 (p < .001), > 8× the standard-instruction simple effect
+- **Simple effect (experiential):** mixed 3.62 vs. single 4.12 (p < .001); a .50-point gap, ~2.5× the .19-point gap under standard instruction
 
 :::
 :::
