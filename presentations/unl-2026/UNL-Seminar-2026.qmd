@@ -1,0 +1,1417 @@
+---
+format:
+  revealjs:
+    scrollable: true
+    self-contained: true
+    slide-number: "c/t"
+    incremental: false
+    reference-location: document
+    progress: true
+    width: 1600
+    height: 900
+    logo: "images/kelley-marketing-revised-removebg-preview.png"
+    footer: ""
+    theme: ["simple", "styles.scss"]
+    code-link: true
+    multiplex: false
+execute:
+  echo: false
+editor:
+  markdown:
+    wrap: 72
+---
+
+# {data-menu-title="Title Slide" visibility="uncounted" style="text-align: left;" data-background-color="#FFFFFF"}
+
+```{=html}
+<style>
+/* Vendored fonts (run fonts/fetch-fonts.sh once). Paths resolve to the deck's fonts/ folder. */
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/open-sans-400.woff2') format('woff2'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/open-sans-600.woff2') format('woff2'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/open-sans-700.woff2') format('woff2'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 800; font-display: swap; src: url('fonts/open-sans-800.woff2') format('woff2'); }
+@font-face { font-family: 'Open Sans'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/open-sans-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'News Cycle'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/news-cycle-400.woff2') format('woff2'); }
+@font-face { font-family: 'News Cycle'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/news-cycle-700.woff2') format('woff2'); }
+@font-face { font-family: 'Fira Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/fira-mono-400.woff2') format('woff2'); }
+.reveal .slide-logo { height: 58px !important; width: auto !important; max-width: unset !important; max-height: unset !important; }
+.reveal table { font-size: 0.80em; }
+</style>
+```
+
+::: {style="margin-left: 20px; margin-top: 10px;"}
+
+<h1 style="font-size: 2.6em; margin-top: 0; line-height: 1.1;">
+Experiential Learning<br>
+<span style="font-weight: lighter; color: #555;">& Gender-Stereotype Attitudes in Science Education</span>
+</h1>
+
+<br>
+
+<div style="display: flex; align-items: center; gap: 18px; margin-top: 4px;">
+<img src="images/nebraska_n.png" style="height: 84px; width: auto; flex: 0 0 auto;" alt="University of Nebraska-Lincoln"/>
+<div style="font-size: 0.8em; color: #333; border-left: 3px solid #d00000; padding-left: 15px;">
+<span style="font-weight: 700;">Research Seminar, College of Business</span><br>
+<span style="font-size: 0.9em; color: #d00000; font-weight: 600;">University of Nebraska-Lincoln</span><br>
+<span style="font-size: 0.8em; color: #888;">October 23, 2026</span>
+</div>
+</div>
+
+<br>
+
+**Muzeeb Shaik**
+<div style="font-size: 0.8em; color: #990000; margin-bottom: 14px;">
+Kelley School of Business | Indiana University, Bloomington
+</div>
+
+<div style="font-size: 0.7em; color: #888;">
+**With:** Huanhuan Shi, John Costello, Adithya Pattabhiramaiah, and Shrihari (Hari) Sridhar
+</div>
+
+:::
+
+# {data-menu-title="Agenda" visibility="uncounted" data-background-color="#FFFFFF"}
+
+```{=html}
+<style>
+.agenda-wrap { display:flex; gap:56px; align-items:flex-start; margin-top:30px; }
+.agenda-left { flex:0 0 34%; }
+.agenda-eyebrow { font-size:0.62em; font-weight:700; letter-spacing:3px; color:#990000; text-transform:uppercase; margin-bottom:8px; }
+.agenda-head { font-size:2.6em; color:#990000; margin:0; line-height:1.05; font-family:'News Cycle', sans-serif; }
+.agenda-list { flex:1; }
+a.agenda-item { display:flex; align-items:baseline; gap:26px; padding:11px 2px; border-bottom:1px solid #e3e3e3; text-decoration:none; cursor:pointer; transition:background 0.12s; }
+a.agenda-item.first { border-top:1px solid #e3e3e3; }
+a.agenda-item:hover { background:#faf2f2; }
+a.agenda-item:hover .agenda-title { color:#990000; }
+.agenda-num { color:#990000; font-weight:800; font-size:0.95em; min-width:1.8em; }
+.agenda-title { color:#333; font-weight:700; font-size:0.95em; }
+</style>
+
+<div class="agenda-wrap">
+  <div class="agenda-left">
+    <div class="agenda-eyebrow">Agenda</div>
+    <div class="agenda-head">Today's plan</div>
+  </div>
+  <div class="agenda-list">
+    <a class="agenda-item first" href="#motivation"><span class="agenda-num">01</span><span class="agenda-title">Motivation</span></a>
+    <a class="agenda-item" href="#conceptual-framework"><span class="agenda-num">02</span><span class="agenda-title">Conceptual framework</span></a>
+    <a class="agenda-item" href="#study-1-field-intervention"><span class="agenda-num">03</span><span class="agenda-title">Study 1: Field intervention</span></a>
+    <a class="agenda-item" href="#identification-robustness"><span class="agenda-num">04</span><span class="agenda-title">Identification and robustness</span></a>
+    <a class="agenda-item" href="#heterogeneity-additional-outcomes"><span class="agenda-num">05</span><span class="agenda-title">Heterogeneity and additional outcomes</span></a>
+    <a class="agenda-item" href="#study-2-isolating-the-mechanism"><span class="agenda-num">06</span><span class="agenda-title">Study 2: Isolating the mechanism</span></a>
+    <a class="agenda-item" href="#study-3-mechanisms"><span class="agenda-num">07</span><span class="agenda-title">Study 3: Mechanisms</span></a>
+    <a class="agenda-item" href="#discussion"><span class="agenda-num">08</span><span class="agenda-title">Discussion and implications</span></a>
+  </div>
+</div>
+```
+
+# Motivation {visibility="uncounted" background-color="#FFFFFF"}
+
+## Education is a service market {.smaller}
+
+- Education is one of the **world's largest service markets**, roughly **4-5% of global GDP**, about **USD 4.4-5.6 trillion a year**, serving **billions of student "consumers"** (UNESCO 2024)
+- Within this market, participation in science is **skewed by gender**
+
+::::::::: columns
+::::: {.column width="50%" .fragment}
+
+### The gap
+
+- Women are only **35%** of STEM graduates worldwide
+- In **India** (our setting), women are **43%** of undergraduates, **29%** of STEM students, and fewer than **18%** of the scientific workforce
+
+:::::
+
+::::: {.column width="50%" .fragment}
+
+### The belief
+
+- "**Science is for boys**" takes hold **by age six** (Bian, Leslie & Cimpian 2017)
+- Beliefs about **who belongs** gate entry and persistence **upstream**, beyond test scores (Cheryan et al. 2017)
+
+:::::
+:::::::::
+
+::: {.callout-important .fragment icon="false"}
+If stereotypes gate participation upstream, moving **beliefs** can matter as much as moving **scores**.
+:::
+
+## Three families of prior interventions {.smaller}
+
+::::::::: columns
+::::: {.column width="33%" .fragment}
+
+### 1. Push campaigns
+
+- Awareness and mass messaging
+- Public service announcements
+
+**Goal:** persuade people to reconsider stereotypes
+
+<div style="font-size: 0.62em; color:#888; margin-top: 8px;">e.g., Paluck et al. 2021; Mukhopadhyay et al. 2024</div>
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### 2. Girls-only programs
+
+- After-school STEM, mentoring
+- Separation as confidence-building
+
+**Goal:** close information gaps, build exposure
+
+<div style="font-size: 0.62em; color:#888; margin-top: 8px;">e.g., Dubetz & Wilson 2013; Scott & White 2013</div>
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### 3. Gender-congruent cues
+
+- Female role models
+- Identity-affirming classrooms
+
+**Goal:** counter the masculine coding of science
+
+<div style="font-size: 0.62em; color:#888; margin-top: 8px;">e.g., Breda et al. 2023; Master et al. 2016</div>
+
+:::::
+:::::::::
+
+::: {.callout-warning .fragment}
+## The common blind spot
+All three **position gender as the problem** and work through persuasion or identity cues, which can trigger **reactance** and heighten gender salience. And they **rarely engage boys**, the classmates and teammates whose beliefs shape whether girls feel they belong (Leaper & Brown 2008).
+:::
+
+## Our reframing: redesign the service, not the message {.smaller}
+
+::: {style="margin-top: 4px; margin-bottom: 10px;"}
+We treat STEM enrichment as an **educational service** and change **two dimensions of how it is delivered**.
+:::
+
+::::::::: columns
+::::: {.column width="50%" .fragment}
+
+### How students participate
+
+**Experiential, hands-on** science, in place of chalk-and-talk instruction
+
+:::::
+
+::::: {.column width="50%" .fragment}
+
+### With whom they participate
+
+**Mixed-gender** teams, in place of gender-segregated classrooms
+
+:::::
+:::::::::
+
+::: {.callout-note .fragment icon="false"}
+## Today's question
+Can redesigning these two dimensions reduce gender stereotypes as a **collateral benefit**, with a **gender-neutral** program that never makes gender the stated focus?
+:::
+
+## Research questions {#research-questions .smaller}
+
+::: {style="font-size: 1.02em; margin-top: 4px; margin-bottom: 10px;"}
+We ask four questions about redesigning the **science learning experience** itself, each one answered by a different study.
+:::
+
+::: {.fragment style="margin-bottom: 24px;"}
+**RQ1. Effect.** Does experiential, mixed-gender science instruction reduce gender-stereotype attitudes, and raise science knowledge, without ever making gender the stated focus?
+:::
+
+::: {.fragment style="margin-bottom: 24px;"}
+**RQ2. Heterogeneity.** Is there heterogeneity in the effect of stereotype reduction, for instance across student gender?
+:::
+
+::: {.fragment style="margin-bottom: 24px;"}
+**RQ3. Design.** Which features carry the effect, experiential pedagogy, mixed-gender grouping, or the two together?
+:::
+
+::: {.fragment}
+**RQ4. Mechanism.** Through what psychological process does contact move beliefs, the affective route (empathy, reduced anxiety) or the cognitive route (trust, knowledge)?
+:::
+
+## Roadmap: a multi-method approach {.smaller}
+
+:::::::::: columns
+::::: {.column width="33%"}
+
+### Study 1
+**Field intervention**
+
+<div style="color:#990000; font-weight:700; font-size:0.9em; margin:2px 0 6px;">Answers RQ1 &amp; RQ2</div>
+
+- 156 schools, Grade 6
+- Difference-in-differences
+- Does it work, and for whom?
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### Study 2
+**2 x 2 experiment**
+
+<div style="color:#990000; font-weight:700; font-size:0.9em; margin:2px 0 6px;">Answers RQ3</div>
+
+- N = 1,207
+- Which features do the work?
+
+:::::
+
+::::: {.column width="33%" .fragment}
+
+### Study 3
+**Mechanism experiment**
+
+<div style="color:#990000; font-weight:700; font-size:0.9em; margin:2px 0 6px;">Answers RQ4</div>
+
+- N = 605
+- Why does it work?
+
+:::::
+::::::::::
+
+# Conceptual Framework {visibility="uncounted" background-color="#FFFFFF"}
+
+## A services lens on educational impact {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+The social impact of a service depends not only on **what it delivers** but on **how it is structured**.
+
+- Prior service research: delivery shapes the customer experience and intended outcomes (Bitner 1992; Lemon & Verhoef 2016)
+- Our claim: delivery can also shape **how consumers perceive the people they interact with**
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+Science learning is the focal outcome; **belief change about who belongs** emerges alongside it, as a collateral social consequence of the service structure.
+:::
+
+:::::
+::::::::::
+
+## Two dimensions of service delivery {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%" .fragment}
+
+### How consumers participate
+
+Customer-participation research: how consumers engage in production and delivery (Yim et al. 2012).
+
+In our setting: **experiential, hands-on** learning.
+
+:::::
+
+::::: {.column width="50%" .fragment}
+
+### With whom they participate
+
+Shared-consumption research: how other consumers shape the experience (Bhargave & Montgomery 2013).
+
+In our setting: **mixed-gender** grouping.
+
+:::::
+::::::::::
+
+::: {.callout-important .fragment}
+We study these **jointly**. The question is whether their effects are interdependent, not simply additive.
+:::
+
+## Intergroup contact theory {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+Allport's (1954) conditions for **prejudice-reducing** contact:
+
+1. Equal group status within the situation
+2. Common goals
+3. Intergroup cooperation
+4. Support of authority
+
+Pettigrew & Tropp (2006, 2008): contact works, and **affect** carries more of the effect than cognition.
+
+:::::
+
+::::: {.column width="48%" .fragment}
+
+::: {.callout-note icon="false"}
+## The key insight
+Experiential science in mixed-gender teams supplies **all four conditions** as a **byproduct of the pedagogy**, not as a gender program.
+:::
+
+:::::
+::::::::::
+
+## Experiential learning: Kolb's cycle {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+<img src="images/experiential-learning-cycle.jpg" style="width: 100%; max-height: 560px; object-fit: contain;"/>
+
+:::::
+
+::::: {.column width="50%"}
+
+- **Concrete experience:** students manipulate real equipment
+- **Reflective observation:** they discuss what they saw
+- **Abstract conceptualization:** they draw conclusions
+- **Active experimentation:** they test and iterate
+
+<div style="font-size: 0.8em; color:#555;">Distinct from acquiring and recalling abstract symbols (Kolb 1984).</div>
+
+:::::
+::::::::::
+
+## Conceptual model {.smaller}
+
+<div style="text-align:center;">
+<img src="images/conceptual_model_flowchart.png" style="width: 82%; max-height: 640px; object-fit: contain;"/>
+</div>
+
+# Study 1: Field Intervention {visibility="uncounted" background-color="#FFFFFF"}
+
+## Our Study Context {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+::: {.fragment data-fragment-index="1"}
+- Public schools serve **over 70%** of India's students, and **more than half** of Grade 9-10 students attend schools **without proper science labs**
+:::
+
+::: {.fragment data-fragment-index="2"}
+- Instruction is **chalk-and-talk**, only **14%** of classrooms use materials beyond the textbook, and students sit in **gender-segregated rows**
+:::
+
+::: {.fragment data-fragment-index="3"}
+- Our setting is **Bodoland, Assam**, spanning all five districts (Kokrajhar, Chirang, Baksa, Tamulpur, Udalguri)
+:::
+
+:::::
+
+::::: {.column width="50%"}
+
+::: {.r-stack}
+
+::: {.fragment .fade-in-then-out data-fragment-index="2"}
+<div style="text-align:center;">
+<img src="images/traditional-classroom.png" style="max-height:470px; width:auto; max-width:100%; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.2);"/>
+<div style="font-size:0.6em; color:#888; margin-top:4px;">Standard classroom, chalk-and-talk with gender-segregated seating (illustrative)</div>
+</div>
+:::
+
+::: {.fragment .fade-in data-fragment-index="3"}
+<div style="text-align:center;">
+<img src="images/bodoland_map.svg" style="max-height:440px; width:auto; max-width:100%;"/>
+<div style="font-size:0.55em; color:#aaa; margin-top:2px;">Bodoland (red), northwest Assam, NE India. Map shows the four pre-2021 districts; Tamulpur was later carved from Baksa. Adapted from Furfur / Wikimedia, CC BY-SA 3.0</div>
+</div>
+:::
+
+:::
+
+:::::
+::::::::::
+
+## The intervention: Mobile Science Labs {.smaller}
+
+:::::::::: columns
+::::: {.column width="48%"}
+
+### What the program adds
+
+- A non-profit brings a **Mobile Science Lab**, a van with lab equipment and two instructors, to rural government schools
+- **Ten 2-hour hands-on sessions** plus two assessments over the year, about **20 added hours** of science
+- Curriculum spans Biology, Chemistry, Physics, and Math, built on **Kolb's experiential cycle**
+- Students work in **mixed-gender groups** on equipment they otherwise never access
+
+<div style="font-size: 0.74em; color:#888; margin-top:12px;">The program never mentions gender. It is a science program.</div>
+
+:::::
+
+::::: {.column width="52%"}
+
+<div style="text-align:center;">
+<img src="images/msl_vehicle_1.jpeg" style="width:72%; max-height:205px; object-fit:contain; border-radius:4px;"/>
+<div style="font-size:0.58em; color:#888; margin-top:2px;">The Mobile Science Lab</div>
+</div>
+
+<div style="display:flex; gap:6px; justify-content:center; margin-top:10px;">
+<img src="images/hands_on_learning_1.jpeg" style="width:32%; max-height:135px; object-fit:cover; border-radius:4px;"/>
+<img src="images/hands_on_learning_2.jpeg" style="width:32%; max-height:135px; object-fit:cover; border-radius:4px;"/>
+<img src="images/hands_on_learning_3.jpeg" style="width:32%; max-height:135px; object-fit:cover; border-radius:4px;"/>
+</div>
+<div style="font-size:0.58em; color:#888; text-align:center; margin-top:3px;">Students working together in mixed-gender groups</div>
+
+:::::
+::::::::::
+
+## A mobile science lab close to home {#bloomington-msl .smaller}
+
+:::::::::: columns
+::::: {.column width="56%"}
+
+::: {.r-stack}
+
+::: {.fragment .fade-out data-fragment-index="1"}
+<img src="images/bloomington_stem_lab.jpg" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 6px; box-shadow: 0 3px 10px rgba(0,0,0,0.22);"/>
+
+<div style="font-size: 0.62em; color:#888; text-align:center; margin-top: 4px;">MCCSC "STEM to Them" Mobile Lab, Bloomington, Indiana</div>
+:::
+
+::: {.fragment .fade-in data-fragment-index="1"}
+<img src="images/nebraska_mobile_lab.jpg" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 6px; box-shadow: 0 3px 10px rgba(0,0,0,0.22);"/>
+
+<div style="font-size: 0.62em; color:#888; text-align:center; margin-top: 4px;">Husker Mobile Beef & Science Lab, University of Nebraska-Lincoln</div>
+:::
+
+:::
+
+:::::
+
+::::: {.column width="44%"}
+
+### The same delivery model
+
+::: {.r-stack style="align-items: start; justify-items: start;"}
+
+::: {.fragment .fade-out data-fragment-index="1" style="text-align: left;"}
+In **Indiana**, Monroe County schools run a *STEM to Them Mobile Lab*, a vehicle that brings hands-on science into classrooms.
+:::
+
+::: {.fragment .fade-in data-fragment-index="1" style="text-align: left;"}
+In **Nebraska**, this university runs the *Mobile Beef & Science Lab* out of its Ithaca center (ENREEC), taking a science classroom and agricultural science on the road.
+
+::: {.callout-note icon="false"}
+The format we study is **not unique to rural India**. A version runs in my backyard, and one runs right here, out of **Nebraska**.
+:::
+:::
+
+:::
+
+:::::
+::::::::::
+
+## Data and sample {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+### Grade 6 sample
+
+- **N = 2,779 students**, **156 schools** in Bodoland
+- Treatment: **2,171** students, **108** schools
+- Control: **608** students, **48** matched schools
+- **Two-wave panel:** baseline and endline within the year
+
+:::::
+
+::::: {.column width="48%" .fragment}
+
+### Two primary outcomes
+
+- **Gender-stereotype attitude:** "Science is for boys more than girls," 1-5
+- **Science knowledge:** percent of grade-aligned items correct, 0-100
+
+<div style="font-size:0.78em; color:#555; margin-top:8px;">Plus a broader battery of science-attitude measures, covering interest, self-efficacy, and intentions to pursue a science career.</div>
+
+:::::
+::::::::::
+
+## We also have Grades 7-8 for treated schools, but focus on Grade 6 {.smaller}
+
+- The partner surveyed treated students in **Grades 6, 7, and 8**, but control schools **only at Grade 6**
+- Grade 6 is the **sole cohort** with both treated and control students, so it is the clean **common-support** sample
+- Restricting to one cohort also holds **age constant** across arms
+
+::: {.fragment}
+Results for the **pooled sample that also includes Grades 7 and 8 remain consistent**.
+:::
+
+# Identification & Robustness {visibility="uncounted" background-color="#FFFFFF"}
+
+## The core threat: non-random selection {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+- Treatment schools were chosen by the implementing partner from a government list, on **school strength, distance from the vehicle route, and language of instruction**
+- Control schools were **not randomly assigned**
+- So treated and control schools may differ on dimensions that affect learning and attitudes
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-warning icon="false"}
+Our strategy: make the arms comparable on observables (matching, reweighting), bound the role of unobservables (Oster), and stress-test inference.
+:::
+
+:::::
+::::::::::
+
+## Building the control group {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+**Coarsened exact matching** on twelve school characteristics observed before the program:
+
+- Ten matched **exactly**, including **pincode** (geography)
+- Two on **coarsened bins** (reading-corner books, total teachers)
+- 92% of control schools share a pincode with a treated school
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+Matching addresses **observed** school differences. Student fixed effects and reweighting handle the rest.
+:::
+
+:::::
+::::::::::
+
+## Pre-treatment balance {.smaller}
+
+::: {style="font-size: 0.58em; width: 92%; margin: 0 auto;"}
+**School characteristics** (the variables we matched on)
+
+| Variable | Matched | Treatment | Control | SMD | $p$ |
+|------|:--:|:--:|:--:|:--:|:--:|
+| Kuchcha building present | Exact | 0.16 | 0.06 | 0.31 | .123 |
+| Co-educational | Exact | 0.95 | 1.00 | $-$0.31 | .324 |
+| School toilet present | Exact | 0.97 | 1.00 | $-$0.24 | .553 |
+| Playground facility | Exact | 0.91 | 0.98 | $-$0.31 | .174 |
+| Dilapidated classroom present | Exact | 0.21 | 0.35 | $-$0.31 | .076 |
+| Reading-corner books | Coarse | 58.33 | 30.92 | 0.15 | .313 |
+| Total teachers (size proxy) | Coarse | 14.26 | 10.12 | 0.47 | .003 |
+:::
+
+::: {style="font-size: 0.58em; width: 92%; margin: 12px auto 0;"}
+**Student outcomes** (not used in matching)
+
+| Outcome (pre-treatment) | Treatment | Control | SMD | $p$ |
+|------|:--:|:--:|:--:|:--:|
+| Gender-stereotype attitude | 2.98 | 2.84 | 0.10 | .026 |
+| Science knowledge, 0-100 | 19.14 | 26.27 | $-$0.36 | $<.001$ |
+:::
+
+<div style="font-size: 0.66em; color:#555; text-align:center; margin-top:10px;">Matching balances schools on their observed characteristics, but the student outcomes, which we never matched on, still differ. Identification therefore rests on within-student change and reweighting, not on the raw cross-section.</div>
+
+## Model-free evidence {.smaller}
+
+<div style="text-align:center;">
+<img src="images/model_free_grade6.png" style="width: 74%; max-height: 640px; object-fit: contain;"/>
+</div>
+
+<div style="font-size: 0.78em; color:#555; text-align:center;">Stereotype: treated 2.98 to 2.08, control 2.84 to 2.76. Knowledge: treated 19 to 39, control stays near 25.</div>
+
+## Estimation {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+Difference-in-differences with **student and period fixed effects**:
+
+$$Y_{it} = \beta\,(Trt_s \times Post_t) + \alpha_i + \tau_t + \varepsilon_{it}$$
+
+- $\beta$ (Treatment $\times$ Post) is the **causal effect**
+- **Student** FE $\alpha_i$: within-student change
+- **Period** FE $\tau_t$
+- **SEs clustered at the school level** (assignment level)
+
+:::::
+
+::::: {.column width="48%" .fragment}
+
+::: {.callout-note icon="false"}
+Identification comes from **within-student change** over the two waves, differenced against the matched control group.
+:::
+
+:::::
+::::::::::
+
+## Main results: difference-in-differences {.smaller}
+
+:::: columns
+
+::: {.column width="72%"}
+
+::: {style="font-size: 0.72em;"}
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel A: Gender-Stereotype Attitude (1-5)</p>
+
+|  | No FE | School FE | Student + Period FE |
+|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | -0.816<sup>&ast;&ast;&ast;</sup> | -0.785<sup>&ast;&ast;&ast;</sup> | **-0.786<sup>&ast;&ast;&ast;</sup>** |
+|  | (0.200) | (0.202) | (0.203) |
+| N (student-waves) | 5,407 | 5,407 | 5,258 |
+| R² | .093 | .275 | .568 |
+
+<p style="text-align: center; font-weight: bold; color: #990000;">Panel B: Science Knowledge Score (0-100)</p>
+
+|  | No FE | School FE | Student + Period FE |
+|------|------|------|------|
+| [**Treatment × Post**]{.my-crimson} | 20.58<sup>&ast;&ast;&ast;</sup> | 20.58<sup>&ast;&ast;&ast;</sup> | **20.58<sup>&ast;&ast;&ast;</sup>** |
+|  | (3.13) | (3.13) | (3.13) |
+| N (student-waves) | 5,558 | 5,558 | 5,558 |
+
+<p style="text-align: center;">*SEs clustered at the school level; <sup>&ast;</sup>p<.05, <sup>&ast;&ast;</sup>p<.01, <sup>&ast;&ast;&ast;</sup>p<.001. Column (3) is primary.*</p>
+:::
+:::
+
+::: {.column width="28%"}
+
+::: {.callout-important .fragment}
+## Stereotypes
+**-0.79 points**
+
+≈ **0.61 SD**, a **quarter** of the control baseline; stable across specifications
+:::
+
+::: {.callout-tip .fragment}
+## Knowledge
+**+20.6 points**
+
+large and significant; treated students overtake control by endline
+:::
+
+:::
+
+::::
+
+## Robustness I: reweighting {.smaller}
+
+::: {style="font-size: 0.82em; width: 72%; margin: 0 auto;"}
+| Specification | Estimate | 95% CI |
+|------|------|------|
+| Student + period FE (primary) | -0.786<sup>&ast;&ast;&ast;</sup> | [-1.18, -0.39] |
+| School fixed effects | -0.785<sup>&ast;&ast;&ast;</sup> | [-1.18, -0.39] |
+| Inverse-propensity weighting | -0.875<sup>&ast;&ast;&ast;</sup> | [-1.32, -0.43] |
+| Entropy balancing | -0.824<sup>&ast;&ast;&ast;</sup> | [-1.27, -0.38] |
+| Doubly-robust DiD (AIPW) | -0.827<sup>&ast;&ast;&ast;</sup> | [-1.18, -0.48] |
+:::
+
+<div style="font-size: 0.78em; color:#555; text-align:center; margin-top:8px;">Reweighting on six baseline covariates leaves the effect **at least as large**. The doubly-robust estimator is consistent if either the propensity or outcome model is correct.</div>
+
+## Robustness II: selection on unobservables {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+**Oster (2019)** coefficient-stability logic:
+
+- Short regression (no FE): $\beta = -0.816$, $R^2 = .093$
+- Long regression (school FE): $\beta = -0.785$, $R^2 = .275$
+- Under $R_{\max} = 1.3 \times R^2_{\text{long}}$, the bias-adjusted effect is $-0.771$
+
+:::::
+
+::::: {.column width="48%" .fragment}
+
+::: {.callout-tip icon="false"}
+## How much selection would it take?
+Unobservables would need to be about **56 times** as strong as all observed covariates combined to explain the effect away.
+:::
+
+:::::
+::::::::::
+
+## Robustness III: small-sample inference {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+With relatively **few control clusters**, conventional clustered SEs could overstate significance. We confirm with:
+
+- School-level **permutation test**: $p = .004$
+- **CR2** (Satterthwaite) correction: $p < .001$
+- Restricted **wild cluster bootstrap**: $p = .002$
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+Design-based and small-sample inference all reject the null. The result does not hinge on the clustered-SE asymptotics.
+:::
+
+:::::
+::::::::::
+
+## The parallel-trends question {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+With a **single pre-period**, parallel trends **cannot be tested**. We say so plainly. Two pieces of evidence bear on it:
+
+- The **control group barely moves** over the year (2.84 to 2.76), an order of magnitude below the treatment effect
+- The effect does **not concentrate** among high-baseline students (no regression-to-the-mean signature)
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-warning icon="false"}
+Neither fact tests parallel trends. Together they make **natural drift** an unlikely explanation for an effect of this size.
+:::
+
+:::::
+::::::::::
+
+## Robustness IV: linguistic composition {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+A concern: treated and control schools might differ in **language and culture** (Bodoland is linguistically mixed).
+
+- Medium of instruction was a **matching variable**; both arms are **96-98% Assamese- or Bodo-medium**
+- Restricting to those schools gives an estimate of **-0.69** (S.E. 0.20), essentially unchanged
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+The effect is **not an artifact of linguistic composition** across arms.
+:::
+
+:::::
+::::::::::
+
+# Heterogeneity & Additional Outcomes {visibility="uncounted" background-color="#FFFFFF"}
+
+## Heterogeneity by student gender {.smaller}
+
+:::::::::: columns
+::::: {.column width="52%"}
+
+::: {style="font-size: 0.78em;"}
+|  | Gender-Stereotype | Science Knowledge |
+|------|:------:|:------:|
+| [**Treat × Post × Male**]{.my-crimson} | **-0.556<sup>&ast;</sup>** | -0.725 |
+|  | p = .012 | p = .833 |
+| Treat × Post | -0.550<sup>&ast;</sup> | 20.952<sup>&ast;&ast;&ast;</sup> |
+| Post × Male | 0.540<sup>&ast;&ast;</sup> | -1.275 |
+
+<div style="font-size:0.9em;">*Student + period FE; <sup>&ast;</sup>p<.05, <sup>&ast;&ast;</sup>p<.01, <sup>&ast;&ast;&ast;</sup>p<.001.*</div>
+:::
+
+:::::
+
+::::: {.column width="48%" .fragment}
+
+- **Stereotype reduction ~2x larger for boys**
+- **Knowledge gains equal** across gender
+- Consistent with contact theory: those who **hold** the stereotype update most
+
+:::::
+::::::::::
+
+## Marginal effects by gender {.smaller}
+
+<div style="text-align:center;">
+<img src="images/marginal_did_gender_grade6.png" style="width: 72%; max-height: 600px; object-fit: contain;"/>
+</div>
+
+<div style="font-size: 0.78em; color:#555; text-align:center;">Stereotype: boys -1.11 [-1.55, -0.66], girls -0.55 [-1.00, -0.10]. Knowledge: statistically equal.</div>
+
+## Not a floor effect {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+A natural worry: boys move more only because they start higher.
+
+- Boys and girls begin at **nearly identical baselines**: **2.96** vs **2.94**, both near the scale midpoint
+- Floor shares are similar: **17%** of boys, **14%** of girls at the floor
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+Boys do not simply have more room to move. The asymmetry reflects **contact theory's out-group logic**: boys hold the stereotype about girls in science.
+:::
+
+:::::
+::::::::::
+
+## Heterogeneity by school context {.smaller}
+
+:::: columns
+::: {.column width="50%" .fragment}
+<img src="images/marginal_DiD_vs_SchoolSize_gs.png" style="width: 100%; max-height: 400px; object-fit: contain;"/>
+<div style="font-size:0.72em; color:#555; text-align:center;">Larger stereotype reductions in bigger schools (p = .027).</div>
+:::
+::: {.column width="50%" .fragment}
+<img src="images/marginal_DiD_vs_GirlsShare_gs.png" style="width: 100%; max-height: 400px; object-fit: contain;"/>
+<div style="font-size:0.72em; color:#555; text-align:center;">No moderation by the girls' share of the grade.</div>
+:::
+::::
+
+::: {.callout-note .fragment icon="false"}
+The effect does not depend on a particular gender ratio, but it is somewhat stronger where more students are exposed together.
+:::
+
+## Effects extend beyond the two outcomes {.smaller}
+
+:::::::::: columns
+::::: {.column width="58%"}
+
+### Broader science attitudes (14 items)
+
+<img src="images/forest_grade6.png" style="width: 100%; max-height: 600px; object-fit: contain;"/>
+
+<div style="font-size: 0.72em; color:#555; text-align:center;">All 14 items move positively and are individually significant.</div>
+
+:::::
+
+::::: {.column width="42%" .fragment}
+
+### Perceptions of excellence
+
+A projective vignette: is a described top student a boy or a girl?
+
+- Science: **β = 0.55** (p < .001)
+- Language arts: **β = 0.45** (p < .001), a placebo domain
+
+The shift reaches **who belongs**, and extends **beyond science**.
+
+:::::
+::::::::::
+
+## Perceptions of excellence: the distributions {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+<div style="text-align:center; font-weight:bold; color:#990000;">High-performing science student</div>
+<img src="images/vignette_science_grade6.png" style="width: 92%;"/>
+:::
+::: {.column width="50%"}
+<div style="text-align:center; font-weight:bold; color:#990000;">High-performing language-arts student</div>
+<img src="images/vignette_arts_grade6.png" style="width: 92%;"/>
+:::
+::::
+
+<div style="font-size: 0.74em; color:#555; text-align:center;">Treated students are more likely to attribute excellence to a girl in **both** domains; the difference between domains is not significant.</div>
+
+# Study 2: Isolating the Mechanism {visibility="uncounted" background-color="#FFFFFF"}
+
+## Why we need experiments {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+The field program **bundles** several features at once:
+
+- Experiential, hands-on pedagogy
+- **Mixed-gender** collaborative grouping
+- Equal-status peer interaction
+- Extended exposure
+
+The field data **cannot isolate** which feature drives the effect, nor the psychological process.
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-tip icon="false"}
+## Two pre-registered experiments
+**Study 2** separates the design features.<br>
+**Study 3** traces the mechanism.
+:::
+
+:::::
+::::::::::
+
+## Study 2: design {#study2 .smaller}
+
+:::::::::: columns
+::::: {.column width="48%"}
+
+### A 2 x 2 between-subjects design
+
+- **N = 1,207** US adults (CloudResearch), pre-registered
+- **Gender grouping:** single vs. mixed
+- **Instruction:** standard vs. experiential
+- Participants imagine being a student in a described school
+
+:::::
+
+::::: {.column width="52%" .fragment}
+
+### The measure
+
+Projective **gender-stereotypical behavioral preference** (Good 2001), 1-7:
+
+> "To what extent would the average student prefer to have **men** on their team, not women?"
+
+Asking about the **average student** reduces socially desirable responding.
+
+:::::
+::::::::::
+
+<div style="font-size:0.6em; text-align:right; color:#777;">[Study 2 details &amp; full stats](#study2-details)</div>
+
+## Study 2: main effects {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+Both features help **on their own**:
+
+- **Grouping:** mixed **3.83** vs single **4.17**, $F(1,1203) = 19.34$, $p < .001$
+- **Instruction:** experiential **3.87** vs standard **4.13**, $F(1,1203) = 10.82$, $p = .001$
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+Main effects are real but modest. The question is whether the two features are **complementary**.
+:::
+
+:::::
+::::::::::
+
+## Study 2: the interaction {.smaller}
+
+:::: columns
+::: {.column width="56%"}
+::: {.r-stack}
+
+<img src="images/study2_interaction.png" style="width: 94%;"/>
+
+<img src="images/study2_grouping.png" class="fragment" style="width: 94%;"/>
+
+:::
+:::
+
+::: {.column width="44%"}
+
+::: {.callout-tip}
+## The interaction (p = .048)
+Mixed-gender grouping cuts stereotypes **mainly under experiential** instruction (3.62 vs. 4.12), about **two and a half times** the gap under standard instruction.
+:::
+
+<div style="font-size: 0.78em; color:#555;">$F(1,1203) = 3.91$, $p = .048$. Equivalently, experiential learning helps only when groups are **mixed**.</div>
+
+:::
+::::
+
+# Study 3: Mechanisms {visibility="uncounted" background-color="#FFFFFF"}
+
+## Why Study 3 {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+Study 2 shows the two features work **together**. Study 3 asks **why**.
+
+- Contact theory names four processes: two **affective**, two **cognitive**
+- We test which ones **carry** the effect
+- Design **mirrors the field contrast**: standard, gender-segregated vs. mixed-gender experiential
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-tip icon="false"}
+## Design
+**N = 605** US adults, pre-registered, two conditions.
+:::
+
+:::::
+::::::::::
+
+<div style="font-size:0.6em; text-align:right; color:#777;">[Study 3 details &amp; measures](#study3-details)</div>
+
+## Study 3: the four contact mechanisms {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+### Affective
+
+- [**Empathy**]{style="color:#1B7F4B;"} toward the other gender (Swart et al. 2011)
+- [**Reduced anxiety**]{style="color:#1B7F4B;"} about cross-gender interaction (Wolfer et al. 2019)
+
+:::::
+
+::::: {.column width="50%"}
+
+### Cognitive
+
+- [**Trust**]{style="color:#2C6FB5;"} of the other gender (Turner et al. 2007)
+- [**Knowledge**]{style="color:#2C6FB5;"} about the other gender (Zagefka et al. 2017)
+
+:::::
+::::::::::
+
+::: {.callout-note .fragment}
+All four are measured with **established multi-item scales** ($\alpha$ from .88 to .94), in a projective frame.
+:::
+
+## Study 3: condition means {.smaller}
+
+:::: columns
+::: {.column width="54%"}
+<img src="images/study3_means.png" style="width: 100%; max-height: 600px; object-fit: contain;"/>
+:::
+
+::: {.column width="46%"}
+
+Mixed-gender experiential learning:
+
+- Replicates the field effect: stereotypes **4.13 to 3.37**
+- Moves **all four** mechanisms in the predicted direction (all $p < .001$)
+
+::: {.callout-note .fragment}
+Each mechanism also **mediates** the effect when tested on its own.
+:::
+
+:::
+::::
+
+## Study 3: what carries the effect {.smaller}
+
+:::::::::: columns
+::::: {.column width="64%"}
+
+<img src="images/mediation_diagram_colored.png" style="width: 100%; max-height: 600px; object-fit: contain;"/>
+
+:::::
+
+::::: {.column width="36%"}
+
+With all four entered **together**, only the **affective** routes survive:
+
+- [**Empathy**]{style="color:#1B7F4B;"}: indirect **-.083** [-.159, -.026]
+- [**Reduced anxiety**]{style="color:#1B7F4B;"}: **-.122** [-.202, -.054]
+- [**Trust**]{style="color:#2C6FB5;"} and [**knowledge**]{style="color:#2C6FB5;"} attenuate to non-significance
+
+:::::
+::::::::::
+
+## Interpretation: affect over cognition {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+- The effect runs through **greater empathy** and **reduced anxiety** toward the other gender
+- Trust and knowledge move, but do not **carry** the effect once affect is in the model
+- Consistent with **Pettigrew & Tropp (2008)**: affect mediates contact effects more than cognition
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-important icon="false"}
+Working shoulder to shoulder changes **how students feel** about one another before it changes **what they know**.
+:::
+
+:::::
+::::::::::
+
+# Discussion {visibility="uncounted" background-color="#FFFFFF"}
+
+## Summary of findings {.smaller}
+
+::: {style="font-size: 0.95em; margin-top: 6px;"}
+The social impact of an educational service depends on both **what is delivered** and **how it is structured**.
+:::
+
+- **Study 1:** experiential, mixed-gender delivery **improves learning** while reducing gender stereotypes as a **collateral outcome**, by about a quarter (-0.79, -0.61 SD), twice as much for boys
+- **Study 2:** the two features are **complementary**, not independently sufficient
+- **Study 3:** the effect operates through **intergroup empathy and reduced anxiety**
+
+## Theoretical implications {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%" .fragment}
+
+### Service design shapes beliefs
+
+Service delivery can shape **how consumers perceive one another**, beyond the focal outcome. Two dimensions, how and with whom, act **jointly**.
+
+:::::
+
+::::: {.column width="50%" .fragment}
+
+### Learn with and about others
+
+Shared experiences let consumers **learn not only with others, but about others**, updating beliefs about co-consumers and the groups they represent.
+
+:::::
+::::::::::
+
+## Contribution to gender and STEM education {.smaller}
+
+:::::::::: columns
+::::: {.column width="55%"}
+
+- Prior interventions target **girls' interest, confidence, or participation** directly
+- We show gender beliefs can shift in **gender-neutral** environments when delivery creates **cross-gender collaboration**
+- The approach **reaches boys**, whom girls-only formats leave untouched
+
+:::::
+
+::::: {.column width="45%" .fragment}
+
+::: {.callout-note icon="false"}
+The **social organization of learning** deserves attention alongside curriculum content and instructional quality.
+:::
+
+:::::
+::::::::::
+
+## Implications for policy and practice {.smaller}
+
+:::: columns
+::: {.column width="62%"}
+
+- India's **National Education Policy** emphasizes experiential learning as a pedagogy; our results give a **second rationale**, belief change
+- Treat **mixed-gender grouping** as a design principle, and evaluate programs on **belief change alongside test scores**
+- For funders: a way to shift beliefs among **boys and girls**, not just self-selected participants
+
+:::
+::: {.column width="38%"}
+<div style="text-align:center;">
+<img src="images/SDG.png" style="width: 90%; max-height: 420px; object-fit: contain;"/>
+</div>
+<div style="font-size: 0.72em; color:#555; text-align:center;">A scalable lever for SDG 4 and 5.</div>
+:::
+::::
+
+## Limitations {.smaller}
+
+1. **Self-reported beliefs**, not downstream enrollment or careers; longitudinal follow-up is needed
+2. The field intervention **bundles** features (Study 2 separates them in the lab; a field factorial would be stronger)
+3. **Rural public-school** setting; generalizability to urban and private settings is open
+4. The field stereotype measure is a **single item**; Studies 2 and 3 use different, multi-item operationalizations
+
+## Thank you {.center data-background-color="#FFFFFF"}
+
+<div style="font-size: 1.4em; color: #555; margin-top: 20px;">Questions &amp; Comments?</div>
+
+<hr style="border-top: 3px solid #990000; width: 100px; margin: 20px 0;">
+
+<div style="font-size: 1.1em; font-weight: bold;">Muzeeb Shaik</div>
+<div style="font-size: 0.8em; color: gray;">Assistant Professor, Kelley School of Business</div>
+<div style="font-size: 0.8em; color: gray;">Indiana University, Bloomington</div>
+<div style="margin-top: 10px;">
+<a href="mailto:shaikmu@iu.edu" style="font-size: 0.8em; color: #990000; text-decoration: none; font-weight: bold;">shaikmu@iu.edu</a>
+</div>
+
+# Appendix {visibility="uncounted" background-color="#FFFFFF"}
+
+## Study 1: primary outcome measures {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Gender-stereotype attitude
+
+> **"I feel science is for boys more than girls."**
+
+- 5-point Likert (1 = Strongly Disagree, 5 = Strongly Agree)
+- Higher = stronger endorsement
+- A single, concrete, direct belief
+
+:::
+
+::: {.column width="50%"}
+
+### Science knowledge score
+
+- Standardized, grade-appropriate assessment
+- Chemistry, physics, biology aligned to the state curriculum
+- Scored as percent correct (0-100), authored by the program provider
+
+:::
+:::
+
+## Study 1: robustness of the knowledge effect {.smaller visibility="uncounted"}
+
+The raw **+20.6** point gain attenuates under matching and reweighting on baseline proficiency, but stays large and significant.
+
+::: {style="font-size: 0.82em; width: 70%; margin: 0 auto;"}
+| Specification | Estimate | 95% CI |
+|------|------|------|
+| Student + period FE (primary) | 20.58 | [14.46, 26.71] |
+| School fixed effects | 20.58 | [14.46, 26.71] |
+| Inverse-propensity weighting | 14.53 | [7.95, 21.10] |
+| Entropy balancing | 15.83 | [9.27, 22.39] |
+| Doubly-robust DiD (AIPW) | 15.52 | [7.47, 23.58] |
+:::
+
+<div style="font-size: 0.74em; color:#555; text-align:center;">The stereotype effect was never confounded by the pre-period knowledge gap.</div>
+
+## Study 1: response-category decomposition {.smaller visibility="uncounted"}
+
+The treatment shifts the **whole distribution** toward disagreement:
+
+- Probability of the lowest category (strongly disagree) rises by **.234** (p < .001)
+- Probability of disagreeing overall (1 or 2) rises by **.31** (p < .001)
+- Probability of agreeing overall (4 or 5) falls by **.18** (p = .004)
+- An ordered probit implies the same monotone shift
+
+## Study 1: pooled Grade 6-8 (for transparency) {.smaller visibility="uncounted"}
+
+::: {style="font-size: 0.82em; width: 72%; margin: 0 auto;"}
+| Specification | Estimate | S.E. |
+|------|:------:|:------:|
+| No fixed effects | -0.595 | 0.186 |
+| School fixed effects | -0.576 | 0.188 |
+| School-by-grade fixed effects | -0.573 | 0.188 |
+| Student + period fixed effects | -0.571 | 0.188 |
+:::
+
+<div style="font-size: 0.74em; color:#555; text-align:center;">Pooled N = 10,214. Smaller than the Grade 6 estimate and identified partly from cross-grade comparisons that lack common support, which is why the main text restricts to Grade 6.</div>
+
+## Study 1: predictors of baseline endorsement {.smaller visibility="uncounted"}
+
+::: {style="font-size: 0.82em; width: 74%; margin: 0 auto;"}
+| Predictor | Estimate | S.E. | $p$ |
+|------|:------:|:------:|:------:|
+| Male | 0.006 | 0.064 | .919 |
+| Baseline science knowledge | 0.001 | 0.002 | .495 |
+| Log school size | 0.090 | 0.045 | .050 |
+| Girls' share of grade | -0.150 | 0.257 | .560 |
+| Teacher-student ratio | -0.336 | 0.916 | .715 |
+:::
+
+<div style="font-size: 0.74em; color:#555; text-align:center;">Baseline endorsement is not systematically predicted by student or school characteristics (joint F(5,153) = 1.99, p = .084; adjusted R² = .005).</div>
+
+## Study 2: procedure and measure (detail) {#study2-details .smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="52%"}
+
+### Procedure
+
+- **N = 1,207** US adults on CloudResearch Connect (M~age~ = 44, 62% female); pre-registered
+- Participants **imagine being a student** in a described public school
+- **Grouping:** single-gender = separate sides of the classroom; mixed-gender = sit and work together
+- **Instruction:** standard = lectures and individual work; experiential = operate equipment, observe, discuss, conclude
+
+:::
+::: {.column width="48%"}
+
+### Dependent measure
+
+> "Suppose there is a team competition to see which team is smarter in math and science. To what extent would the **average student** prefer to have men on their team, not women?"
+
+- 1 = "not at all" to 7 = "very much so"
+- Projective framing reduces socially desirable responding
+
+:::
+:::
+
+<div style="font-size:0.6em; text-align:right; color:#777;">[Back to Study 2](#study2)</div>
+
+## Study 2: full statistics {.smaller visibility="uncounted"}
+
+- **Main effect, grouping:** mixed 3.83 vs single 4.17, $F(1,1203) = 19.34$, $p < .001$, $\eta_p^2 = .016$
+- **Main effect, instruction:** experiential 3.87 vs standard 4.13, $F(1,1203) = 10.82$, $p = .001$, $\eta_p^2 = .009$
+- **Interaction:** $F(1,1203) = 3.91$, $p = .048$, $\eta_p^2 = .003$
+- **Simple effect (experiential):** mixed 3.62 vs single 4.12, $p < .001$; a .50-point gap, about 2.5x the .19-point gap under standard instruction
+
+## Study 3: procedure and measures (detail) {#study3-details .smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Procedure
+
+- **N = 605** US adults (CloudResearch; M~age~ = 43, 55% female); pre-registered
+- Both conditions: school normally has "gender-segregated rows with limited cross-gender interaction"
+- **Experiential condition:** a program where students of all genders work together to conduct experiments, observe, and discuss, in small mixed-gender groups
+
+:::
+::: {.column width="50%"}
+
+### Stereotype measure (3 items, $\alpha$ = .876)
+
+- "Men are just better at science than women"
+- "I would go to a man instead of a woman for help with a math or science problem"
+- "Genders differ in their skill at science"
+
+Projectively framed (Lane, Goh & Driver-Linn 2012).
+
+:::
+:::
+
+<div style="font-size:0.6em; text-align:right; color:#777;">[Back to Study 3](#study3)</div>
+
+## Study 3: condition means and mediation (detail) {.smaller visibility="uncounted"}
+
+::: columns
+::: {.column width="50%"}
+
+### Condition means (control to experiential)
+
+- Stereotype: 4.13 to 3.37 (p < .001)
+- Trust: 3.81 to 4.45 (p < .001)
+- Knowledge: 3.46 to 4.28 (p < .001)
+- Empathy: 4.24 to 4.77 (p < .001)
+- Anxiety: 4.68 to 4.17 (p < .001)
+
+:::
+::: {.column width="50%"}
+
+### Mediation (PROCESS Model 4)
+
+**Simple (each significant):** trust -.195, knowledge -.182, empathy -.147, anxiety -.171
+
+**Parallel (all four):**
+
+- Empathy **-.083** [-.159, -.026]
+- Anxiety **-.122** [-.202, -.054]
+- Trust -.072 (n.s.), Knowledge +.030 (n.s.)
+
+:::
+:::
+
+## Identification: summary {.smaller visibility="uncounted"}
+
+| Threat | Evidence against it |
+|------|------|
+| Observed school differences | CEM on 12 characteristics; balance on all |
+| Baseline student differences | Within-student (student FE) design |
+| Residual observed imbalance | IPW, entropy balancing, doubly-robust DiD |
+| Unobserved selection | Oster bound (~56x) |
+| Small-cluster inference | Permutation (.004), CR2 (<.001), wild bootstrap (.002) |
+| Natural drift / pre-trends | Control-group stability; no high-baseline concentration |
+| Linguistic composition | Assamese/Bodo-only estimate unchanged (-0.69) |
+
+```{=html}
+<script>
+(function(){
+  function upd(){
+    var sn = document.querySelector('.slide-number'); if(!sn) return;
+    var cur = (window.Reveal && Reveal.getCurrentSlide) ? Reveal.getCurrentSlide() : null;
+    sn.style.visibility = (cur && cur.classList.contains('level1')) ? 'hidden' : 'visible';
+  }
+  function init(){
+    if (window.Reveal && Reveal.on){ Reveal.on('ready', upd); Reveal.on('slidechanged', upd); upd(); }
+    else { setTimeout(init, 200); }
+  }
+  init();
+})();
+</script>
+```
