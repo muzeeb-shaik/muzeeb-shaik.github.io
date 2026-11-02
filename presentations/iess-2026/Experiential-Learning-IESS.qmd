@@ -438,9 +438,14 @@ Both features help a little alone, but the story is the **interaction**.
 
 :::
 ::: {.column width="60%"}
-<img src="images/study2_interaction.png" style="width: 94%;"/>
 
-::: {.callout-tip}
+::: r-stack
+![](images/study2_grouping.png){width="94%"}
+
+![](images/study2_interaction.png){.fragment fragment-index="1" width="94%"}
+:::
+
+::: {.callout-tip .fragment fragment-index="1"}
 ## The interaction (p = .048)
 Mixed-gender grouping cuts stereotypes **mainly under experiential** instruction (3.62 vs. 4.12), about **2.5x** the gap under standard instruction. Experiential learning helps only when groups are **mixed**.
 :::
