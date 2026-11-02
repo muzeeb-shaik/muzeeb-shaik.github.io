@@ -262,27 +262,27 @@ $$Y_{it} = \beta\,(Trt_s \times Post_t) + \alpha_i + \tau_t + \varepsilon_{it}$$
 
 ## Pre-treatment balance {.smaller}
 
-::: {style="font-size: 0.58em; width: 92%; margin: 0 auto;"}
+::: {style="font-size: 0.90em; width: 96%; margin: 0 auto;"}
 **School characteristics** (the variables we matched on)
 
 | Variable | Matched | Treatment | Control | SMD | $p$ |
 |------|:--:|:--:|:--:|:--:|:--:|
 | Kuchcha building present | Exact | 0.16 | 0.06 | 0.31 | .123 |
-| Co-educational | Exact | 0.95 | 1.00 | $-$0.31 | .324 |
-| School toilet present | Exact | 0.97 | 1.00 | $-$0.24 | .553 |
-| Playground facility | Exact | 0.91 | 0.98 | $-$0.31 | .174 |
-| Dilapidated classroom present | Exact | 0.21 | 0.35 | $-$0.31 | .076 |
+| Co-educational | Exact | 0.95 | 1.00 | −0.31 | .324 |
+| School toilet present | Exact | 0.97 | 1.00 | −0.24 | .553 |
+| Playground facility | Exact | 0.91 | 0.98 | −0.31 | .174 |
+| Dilapidated classroom present | Exact | 0.21 | 0.35 | −0.31 | .076 |
 | Reading-corner books | Coarse | 58.33 | 30.92 | 0.15 | .313 |
 | Total teachers (size proxy) | Coarse | 14.26 | 10.12 | 0.47 | .003 |
 :::
 
-::: {style="font-size: 0.58em; width: 92%; margin: 12px auto 0;"}
+::: {style="font-size: 0.90em; width: 96%; margin: 18px auto 0;"}
 **Student outcomes** (not used in matching)
 
 | Outcome (pre-treatment) | Treatment | Control | SMD | $p$ |
 |------|:--:|:--:|:--:|:--:|
 | Gender-stereotype attitude | 2.98 | 2.84 | 0.10 | .026 |
-| Science knowledge, 0-100 | 19.14 | 26.27 | $-$0.36 | $<.001$ |
+| Science knowledge, 0-100 | 19.14 | 26.27 | −0.36 | $<.001$ |
 :::
 
 ## Model-free evidence {.smaller}
@@ -299,7 +299,7 @@ $$Y_{it} = \beta\,(Trt_s \times Post_t) + \alpha_i + \tau_t + \varepsilon_{it}$$
 
 ::: {.column width="72%"}
 
-::: {style="font-size: 0.72em;"}
+::: {style="font-size: 0.98em;"}
 <p style="text-align: center; font-weight: bold; color: #990000;">Panel A: Gender-Stereotype Attitude (1-5)</p>
 
 |  | No FE | School FE | Student + Period FE |
@@ -346,7 +346,7 @@ large and significant; treated students overtake control by endline
 :::::::::: columns
 ::::: {.column width="52%"}
 
-::: {style="font-size: 0.78em;"}
+::: {style="font-size: 1.05em;"}
 |  | Gender-Stereotype | Science Knowledge |
 |------|:------:|:------:|
 | [**Treat × Post × Male**]{.my-crimson} | **-0.556<sup>&ast;</sup>** | -0.725 |
