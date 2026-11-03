@@ -177,6 +177,48 @@ We treat STEM enrichment as an **educational service** and change **two dimensio
 Can redesigning these two dimensions reduce gender stereotypes as a **collateral benefit**, with a **gender-neutral** program that never makes gender the stated focus?
 :::
 
+## Our study context {.smaller}
+
+:::::::::: columns
+::::: {.column width="50%"}
+
+::: {.fragment data-fragment-index="1"}
+- Public schools serve **over 70%** of India's students, and **more than half** of Grade 9-10 students attend schools **without proper science labs**
+:::
+
+::: {.fragment data-fragment-index="2"}
+- Instruction is **chalk-and-talk**, only **14%** of classrooms use materials beyond the textbook, and students sit in **gender-segregated rows**
+:::
+
+::: {.fragment data-fragment-index="3"}
+- Our setting is **Bodoland, Assam**, spanning all five districts (Kokrajhar, Chirang, Baksa, Tamulpur, Udalguri)
+:::
+
+:::::
+
+::::: {.column width="50%"}
+
+::: {.r-stack}
+
+::: {.fragment .fade-in-then-out data-fragment-index="2"}
+<div style="text-align:center;">
+<img src="images/traditional-classroom.png" style="max-height:470px; width:auto; max-width:100%; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.2);"/>
+<div style="font-size:0.6em; color:#888; margin-top:4px;">Standard classroom, chalk-and-talk with gender-segregated seating (illustrative)</div>
+</div>
+:::
+
+::: {.fragment .fade-in data-fragment-index="3"}
+<div style="text-align:center;">
+<img src="images/bodoland_map.svg" style="max-height:440px; width:auto; max-width:100%;"/>
+<div style="font-size:0.55em; color:#aaa; margin-top:2px;">Bodoland (red), northwest Assam, NE India. Map shows the four pre-2021 districts; Tamulpur was later carved from Baksa. Adapted from Furfur / Wikimedia, CC BY-SA 3.0</div>
+</div>
+:::
+
+:::
+
+:::::
+::::::::::
+
 ## Setting: Mobile Science Labs in Bodoland, India {.smaller}
 
 :::::::::: columns
@@ -485,7 +527,6 @@ The social impact of an educational service depends on both **what it delivers**
 - The two design features are **complementary**; the effect runs through **empathy and reduced anxiety**
 - It **reaches boys**, whom girls-only formats leave untouched
 - India's **National Education Policy** already promotes **experiential learning**; our results add a second rationale, belief change alongside learning
-- A design principle for education, evaluate programs on **belief change alongside test scores**
 
 :::
 ::: {.column width="40%"}
