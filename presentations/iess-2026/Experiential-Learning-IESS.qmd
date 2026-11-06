@@ -169,7 +169,14 @@ We treat STEM enrichment as an **educational service** and change **two dimensio
 :::::::::
 
 ::: {style="font-size: 0.8em; color:#444; margin-top: 6px;" .fragment}
-**Mechanism:** intergroup contact (Allport 1954), equal-status collaboration toward common goals reduces prejudice, supplied here as a byproduct of the pedagogy, not as a gender program.
+**Mechanism:** Intergroup contact (Allport 1954) reduces prejudice when contact meets four conditions.
+
+- **Equal status**
+- **Common goals**
+- **Cooperation**
+- **Institutional support**
+
+Mixed-gender experiential teams supply all four as a byproduct of the pedagogy, not as a gender program.
 :::
 
 ::: {.callout-note .fragment icon="false"}
